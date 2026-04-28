@@ -1,0 +1,19 @@
+project/
+│
+├── data/
+├── src/
+│   ├── data.py
+│   ├── features.py
+│   ├── train.py
+│   ├── predict.py
+│
+├── api/
+│   └── main.py
+│
+├── airflow/
+│   └── dag.py
+│
+├── models/
+├── Dockerfile
+├── requirements.txt
+└── README.md
