@@ -6,6 +6,11 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 import pickle
+from rdkit import Chem
+from rdkit.Chem import AllChem
+from rxnmapper import RXNMapper
+from rdkit.Chem import rdChemReactions
+
 
 # Constants (move to config.py ideally)
 DATA_DIR = Path("./data")
@@ -56,6 +61,40 @@ def drop_unused_columns(df: pd.DataFrame, columns: list) -> pd.DataFrame:
 
 def remove_nan_targets(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
     return df.dropna(subset=[target_col])
+
+
+
+def standardize_mol(molecule):
+    molecule = Chem.AddHs(molecule) 
+    # Sanitize the molecule
+
+    AllChem.SanitizeMol(molecule) #commented out bc it is done already below
+    # AllChem.EmbedMolecule(molecule, randomSeed=1, maxAttempts = 5000) #https://github.com/rdkit/rdkit/issues/1433 #inserted maxattempts
+    AllChem.EmbedMolecule(molecule, randomSeed=1)  #commented out bc it is done already below
+    AllChem.UFFOptimizeMolecule(molecule) #commented out bc it is done already below
+    molecule.GetConformer() #commented out bc it is done already below
+
+    return molecule
+
+_rxn_mapper = RXNMapper()  # reuse globally
+
+
+def build_tautomer_pair(smi_t1, smi_t2):
+    """
+    Build RDKit molecules for a tautomer pair from a dataframe row.
+    """
+
+    rxns = [f"{smi_t1}>>{smi_t2}"]
+    outputs = _rxn_mapper.get_attention_guided_atom_maps(rxns)
+
+    out = outputs[0]
+    rxn = rdChemReactions.ReactionFromSmarts(out["mapped_rxn"], useSmiles=True)
+    trxn = rdChemReactions.ChemicalReaction(rxn)
+
+    t1 = standardize_mol(trxn.GetReactants()[0])
+    t2 = standardize_mol(trxn.GetProducts()[0])
+
+    return (t1, t2)
 
 
 # -------------------------
