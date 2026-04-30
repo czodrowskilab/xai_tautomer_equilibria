@@ -97,18 +97,53 @@ def build_tautomer_pair(smi_t1, smi_t2):
     return (t1, t2)
 
 
+RENAME_MAP = {
+    "log_K_x": "K (T/E/M)",
+    "smi_t1": "t1_smiles",
+    "smi_t2": "t2_smiles",
+    "murcko_smiles_x": "murcko_smiles",
+}
+
+
+def standardize_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Normalize dataset column names into a consistent schema.
+    """
+    df = df.copy()
+
+    missing = [c for c in RENAME_MAP if c not in df.columns]
+    if missing:
+        raise ValueError(f"Missing expected columns: {missing}")
+
+    return df.rename(columns=RENAME_MAP)
+
+
+def filter_by_row_pickle(df: pd.DataFrame, pickle_path: str, row_col: str = "row") -> pd.DataFrame:
+    """
+    Filter dataframe to only include rows listed in a pickle file.
+    """
+    with open(pickle_path, "rb") as f:
+        valid_rows = pickle.load(f)
+
+    df = df.copy()
+
+    return df[df[row_col].astype(int).isin(valid_rows)].reset_index(drop=True)
+
+
 # -------------------------
 # Pipeline entrypoint
 # -------------------------
-def build_dataset():
+def build_dataset(df):
     """Main dataset construction pipeline."""
     
     ddg_map = load_ddg_mapping(DDG_PATH)
 
-    df = load_tautobase(DATA_DIR / "tautobase.csv")
+    #df = load_tautobase(DATA_DIR / "tautobase.csv")
 
     df = add_ddg(df, ddg_map)
     df = remove_nan_targets(df, "ddG")
+    df = remove_nan_targets(df, "t1-smiles")
+    df = remove_nan_targets(df, "t2-smiles")
 
     return df
 
