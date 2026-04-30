@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
-import pickle
+import json
+from typing import Tuple
 
 from util.preprocess import build_tautomer_pair, build_dataset, standardize_columns, filter_by_row_pickle
 from util.ring_analysis import extract_relevant_ring_indices, extract_ring_bond_types, extract_ring_bond_types_neighbor
@@ -44,9 +45,9 @@ def build_features(
 def main():
 
     # -------------------------
-    # Load data
+    # Load raw data
     # -------------------------
-    PATH = "./data/tautobase_edited.csv"
+    PATH = "./data/raw/tautobase_edited.csv"
     df = pd.read_csv(PATH)
 
     # -------------------------
@@ -55,12 +56,11 @@ def main():
     df = standardize_columns(df)
 
     # -------------------------
-    # Build ring features
+    # Ring analysis
     # -------------------------
     results = []
 
     for row in df.itertuples(index=False):
-
         try:
             t1_mol, t2_mol = build_tautomer_pair(row.t1_smiles, row.t2_smiles)
 
@@ -74,15 +74,11 @@ def main():
                 row.nicszz_vals_t2
             )
 
-            ring_change = (
-                extract_ring_bond_types(t1_mol, rel_t1)
-                != extract_ring_bond_types(t2_mol, rel_t2)
-            )
+            ring_change = extract_ring_bond_types(t1_mol, rel_t1) != \
+                          extract_ring_bond_types(t2_mol, rel_t2)
 
-            neighbor_change = (
-                extract_ring_bond_types_neighbor(t1_mol, rel_t1)
-                != extract_ring_bond_types_neighbor(t2_mol, rel_t2)
-            )
+            neighbor_change = extract_ring_bond_types_neighbor(t1_mol, rel_t1) != \
+                              extract_ring_bond_types_neighbor(t2_mol, rel_t2)
 
             results.append({
                 "row": row.row,
@@ -94,24 +90,21 @@ def main():
             print(f"Row {row.row} failed: {e}")
             continue
 
-    results_df = pd.DataFrame(results)
-    df = df.merge(results_df, on="row")
+    df = df.merge(pd.DataFrame(results), on="row")
 
     # -------------------------
-    # Create subsets
+    # Subsets
     # -------------------------
-    mols_w_change = df[df["ring_change"]]
-    mols_no_change = df[~df["ring_change"]]
-
-    mols_change_near = mols_no_change[mols_no_change["neighbor_change"]]
-    mols_no_change_near = mols_no_change[~mols_no_change["neighbor_change"]]
-    mols_w_arom_combined =  pd.concat([mols_change_near, mols_no_change_near], ignore_index=True)
     subsets = {
-        "change": mols_w_change,
-        "change_near": mols_change_near,
-        "no_change_near": mols_no_change_near,
-        "mols_w_arom_combined": mols_w_arom_combined
+        "change": df[df["ring_change"]],
+        "change_near": df[df["neighbor_change"] & ~df["ring_change"]],
+        "no_change_near": df[~df["neighbor_change"] & ~df["ring_change"]],
     }
+
+    subsets["combined"] = pd.concat(
+        [subsets["change_near"], subsets["no_change_near"]],
+        ignore_index=True
+    )
 
     # -------------------------
     # Feature configs
@@ -119,16 +112,19 @@ def main():
     bit_lengths = [1024, 2048, 4096, 8192]
     bit_radii = [2, 3, 4]
 
-
     # -------------------------
     # Run experiments
     # -------------------------
     for name, subset_df in subsets.items():
 
-        print(f"\nSubset: {name}")
+        print(f"\nProcessing subset: {name}")
 
         subset_df = build_dataset(subset_df)
-        subset_df = filter_by_row_pickle(subset_df, "wieder_rows.pkl")
+
+        subset_df = filter_by_row_pickle(
+            subset_df,
+            "./data/external/wieder_rows.pkl"
+        )
 
         for radius in bit_radii:
             for n_bits in bit_lengths:
@@ -139,8 +135,20 @@ def main():
 
                 y = df_valid["ddG"].values
 
-                np.save(f"./data/X_{name}_r{radius}_b{n_bits}.npy", X)
-                np.save(f"./data/y_{name}_r{radius}_b{n_bits}.npy", y)
+                config = {
+                    "subset": name,
+                    "radius": radius,
+                    "n_bits": n_bits,
+                    "target": "ddG"
+                }
+
+                base = f"./data/processed/{name}_r{radius}_b{n_bits}"
+
+                np.save(base + "_X.npy", X)
+                np.save(base + "_y.npy", y)
+
+                with open(base + "_config.json", "w") as f:
+                    json.dump(config, f, indent=2)
 
                 print(f"saved {name}_r{radius}_b{n_bits}")
 

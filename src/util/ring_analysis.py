@@ -6,8 +6,8 @@ from rdkit import Chem
 from rdkit.Chem import rdChemReactions
 from rxnmapper import RXNMapper
 from typing import Dict, Tuple, Iterable
-from preprocess import standardize_mol, build_tautomer_pair
-from aromaticity import is_ring_aromatic
+from util.preprocess import standardize_mol, build_tautomer_pair
+from util.aromaticity import is_ring_aromatic
 
 
 def extract_relevant_ring_indices(
