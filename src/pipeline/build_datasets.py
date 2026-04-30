@@ -47,7 +47,7 @@ def main():
     # -------------------------
     # Load raw data
     # -------------------------
-    PATH = "./data/raw/tautobase_edited.csv"
+    PATH = "../data/raw/tautobase_edited.csv"
     df = pd.read_csv(PATH)
 
     # -------------------------
@@ -123,7 +123,7 @@ def main():
 
         subset_df = filter_by_row_pickle(
             subset_df,
-            "./data/external/wieder_rows.pkl"
+            "../data/external/wieder_rows.pkl"
         )
 
         for radius in bit_radii:
@@ -142,7 +142,7 @@ def main():
                     "target": "ddG"
                 }
 
-                base = f"./data/processed/{name}_r{radius}_b{n_bits}"
+                base = f"../data/processed/{name}_r{radius}_b{n_bits}"
 
                 np.save(base + "_X.npy", X)
                 np.save(base + "_y.npy", y)

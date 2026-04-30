@@ -13,8 +13,8 @@ from rdkit.Chem import rdChemReactions
 
 
 # Constants (move to config.py ideally)
-DATA_DIR = Path("./data")
-DDG_PATH = Path("./dG_calculation/data/ddG_all_no_imag_SMD.pkl")
+DATA_DIR = Path("../data")
+DDG_PATH = Path("../data/external/ddG_all_no_imag_SMD.pkl")
 
 
 # -------------------------
