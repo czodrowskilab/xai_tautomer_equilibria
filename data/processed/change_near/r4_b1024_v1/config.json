@@ -1,0 +1,7 @@
+{
+  "subset": "change_near",
+  "radius": 4,
+  "n_bits": 1024,
+  "target": "ddg",
+  "n_features": 676
+}
