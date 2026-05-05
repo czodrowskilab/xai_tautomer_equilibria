@@ -52,6 +52,14 @@ put this in slurm script as a shell envrionment variable for slurm jobs
 export OPTUNA_DB="postgresql://user:pass@10.12.3.45:5432/optuna"
 
 with that all workers should connect to the same data base
+on cluster:
+mkdir -p logs
+
+source ~/ml_env_2/bin/activate
+pip install -e .
+sbatch run.sh
+
+
 
 mlflow server \
   --backend-store-uri sqlite:///mlflow.db \
