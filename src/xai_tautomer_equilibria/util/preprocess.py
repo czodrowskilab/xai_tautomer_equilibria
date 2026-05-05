@@ -131,6 +131,13 @@ def filter_by_row_pickle(df: pd.DataFrame, pickle_path: str, row_col: str = "row
     return df[df[row_col].astype(int).isin(valid_rows)].reset_index(drop=True)
 
 
+def move_rows(source_df, target_df, row_ids):
+    rows = source_df[source_df["row"].isin(row_ids)]
+    source_df = source_df[~source_df["row"].isin(row_ids)]
+    target_df = pd.concat([target_df, rows], ignore_index=True)
+    return source_df, target_df
+
+
 # -------------------------
 # Pipeline entrypoint
 # -------------------------

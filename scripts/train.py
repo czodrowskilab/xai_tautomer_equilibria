@@ -60,6 +60,8 @@ def main():
                     },
                     config
                 )
+                # store model in mlflow
+                mlflow.sklearn.log_model(model, "model")
 
 if __name__ == "__main__":
     main()

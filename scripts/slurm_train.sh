@@ -6,6 +6,7 @@
 #SBATCH --time=24:00:00
 #SBATCH --output=logs/train_%j.out
 
-source activate ml_env_2
+source ~/ml_env_2/bin/activate
+pip install -e .
 
 python scripts/train.py

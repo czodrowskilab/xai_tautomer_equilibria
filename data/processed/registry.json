@@ -5,7 +5,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r2_b1024_v1",
     "radius": 2,
     "n_bits": 1024,
-    "n_features": 936
+    "n_features": 934
   },
   {
     "dataset_id": "r2_b2048_v1",
@@ -13,7 +13,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r2_b2048_v1",
     "radius": 2,
     "n_bits": 2048,
-    "n_features": 1448
+    "n_features": 1440
   },
   {
     "dataset_id": "r2_b4096_v1",
@@ -21,7 +21,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r2_b4096_v1",
     "radius": 2,
     "n_bits": 4096,
-    "n_features": 1884
+    "n_features": 1870
   },
   {
     "dataset_id": "r2_b8192_v1",
@@ -29,7 +29,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r2_b8192_v1",
     "radius": 2,
     "n_bits": 8192,
-    "n_features": 2189
+    "n_features": 2170
   },
   {
     "dataset_id": "r3_b1024_v1",
@@ -45,7 +45,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r3_b2048_v1",
     "radius": 3,
     "n_bits": 2048,
-    "n_features": 1879
+    "n_features": 1876
   },
   {
     "dataset_id": "r3_b4096_v1",
@@ -53,7 +53,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r3_b4096_v1",
     "radius": 3,
     "n_bits": 4096,
-    "n_features": 2929
+    "n_features": 2910
   },
   {
     "dataset_id": "r3_b8192_v1",
@@ -61,7 +61,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r3_b8192_v1",
     "radius": 3,
     "n_bits": 8192,
-    "n_features": 3833
+    "n_features": 3801
   },
   {
     "dataset_id": "r4_b1024_v1",
@@ -77,7 +77,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r4_b2048_v1",
     "radius": 4,
     "n_bits": 2048,
-    "n_features": 1937
+    "n_features": 1935
   },
   {
     "dataset_id": "r4_b4096_v1",
@@ -85,7 +85,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r4_b4096_v1",
     "radius": 4,
     "n_bits": 4096,
-    "n_features": 3160
+    "n_features": 3145
   },
   {
     "dataset_id": "r4_b8192_v1",
@@ -93,7 +93,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_in_arom_r/r4_b8192_v1",
     "radius": 4,
     "n_bits": 8192,
-    "n_features": 4314
+    "n_features": 4285
   },
   {
     "dataset_id": "r2_b1024_v1",
@@ -101,7 +101,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r2_b1024_v1",
     "radius": 2,
     "n_bits": 1024,
-    "n_features": 367
+    "n_features": 386
   },
   {
     "dataset_id": "r2_b2048_v1",
@@ -109,7 +109,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r2_b2048_v1",
     "radius": 2,
     "n_bits": 2048,
-    "n_features": 407
+    "n_features": 430
   },
   {
     "dataset_id": "r2_b4096_v1",
@@ -117,7 +117,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r2_b4096_v1",
     "radius": 2,
     "n_bits": 4096,
-    "n_features": 433
+    "n_features": 459
   },
   {
     "dataset_id": "r2_b8192_v1",
@@ -125,7 +125,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r2_b8192_v1",
     "radius": 2,
     "n_bits": 8192,
-    "n_features": 450
+    "n_features": 476
   },
   {
     "dataset_id": "r3_b1024_v1",
@@ -133,7 +133,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r3_b1024_v1",
     "radius": 3,
     "n_bits": 1024,
-    "n_features": 586
+    "n_features": 609
   },
   {
     "dataset_id": "r3_b2048_v1",
@@ -141,7 +141,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r3_b2048_v1",
     "radius": 3,
     "n_bits": 2048,
-    "n_features": 716
+    "n_features": 759
   },
   {
     "dataset_id": "r3_b4096_v1",
@@ -149,7 +149,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r3_b4096_v1",
     "radius": 3,
     "n_bits": 4096,
-    "n_features": 791
+    "n_features": 842
   },
   {
     "dataset_id": "r3_b8192_v1",
@@ -157,7 +157,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r3_b8192_v1",
     "radius": 3,
     "n_bits": 8192,
-    "n_features": 842
+    "n_features": 897
   },
   {
     "dataset_id": "r4_b1024_v1",
@@ -165,7 +165,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r4_b1024_v1",
     "radius": 4,
     "n_bits": 1024,
-    "n_features": 676
+    "n_features": 697
   },
   {
     "dataset_id": "r4_b2048_v1",
@@ -173,7 +173,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r4_b2048_v1",
     "radius": 4,
     "n_bits": 2048,
-    "n_features": 856
+    "n_features": 900
   },
   {
     "dataset_id": "r4_b4096_v1",
@@ -181,7 +181,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r4_b4096_v1",
     "radius": 4,
     "n_bits": 4096,
-    "n_features": 965
+    "n_features": 1019
   },
   {
     "dataset_id": "r4_b8192_v1",
@@ -189,7 +189,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/change_near/r4_b8192_v1",
     "radius": 4,
     "n_bits": 8192,
-    "n_features": 1037
+    "n_features": 1097
   },
   {
     "dataset_id": "r2_b1024_v1",
@@ -293,7 +293,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r2_b1024_v1",
     "radius": 2,
     "n_bits": 1024,
-    "n_features": 682
+    "n_features": 689
   },
   {
     "dataset_id": "r2_b2048_v1",
@@ -301,7 +301,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r2_b2048_v1",
     "radius": 2,
     "n_bits": 2048,
-    "n_features": 864
+    "n_features": 876
   },
   {
     "dataset_id": "r2_b4096_v1",
@@ -309,7 +309,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r2_b4096_v1",
     "radius": 2,
     "n_bits": 4096,
-    "n_features": 977
+    "n_features": 993
   },
   {
     "dataset_id": "r2_b8192_v1",
@@ -317,7 +317,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r2_b8192_v1",
     "radius": 2,
     "n_bits": 8192,
-    "n_features": 1039
+    "n_features": 1058
   },
   {
     "dataset_id": "r3_b1024_v1",
@@ -325,7 +325,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r3_b1024_v1",
     "radius": 3,
     "n_bits": 1024,
-    "n_features": 885
+    "n_features": 890
   },
   {
     "dataset_id": "r3_b2048_v1",
@@ -333,7 +333,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r3_b2048_v1",
     "radius": 3,
     "n_bits": 2048,
-    "n_features": 1265
+    "n_features": 1288
   },
   {
     "dataset_id": "r3_b4096_v1",
@@ -341,7 +341,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r3_b4096_v1",
     "radius": 3,
     "n_bits": 4096,
-    "n_features": 1558
+    "n_features": 1592
   },
   {
     "dataset_id": "r3_b8192_v1",
@@ -349,7 +349,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r3_b8192_v1",
     "radius": 3,
     "n_bits": 8192,
-    "n_features": 1744
+    "n_features": 1786
   },
   {
     "dataset_id": "r4_b1024_v1",
@@ -357,7 +357,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r4_b1024_v1",
     "radius": 4,
     "n_bits": 1024,
-    "n_features": 916
+    "n_features": 921
   },
   {
     "dataset_id": "r4_b2048_v1",
@@ -365,7 +365,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r4_b2048_v1",
     "radius": 4,
     "n_bits": 2048,
-    "n_features": 1362
+    "n_features": 1387
   },
   {
     "dataset_id": "r4_b4096_v1",
@@ -373,7 +373,7 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r4_b4096_v1",
     "radius": 4,
     "n_bits": 4096,
-    "n_features": 1714
+    "n_features": 1751
   },
   {
     "dataset_id": "r4_b8192_v1",
@@ -381,6 +381,6 @@
     "path": "/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria/xai_tautomer_equilibria/data/processed/no_change_in_arom_r/r4_b8192_v1",
     "radius": 4,
     "n_bits": 8192,
-    "n_features": 1957
+    "n_features": 2003
   }
 ]

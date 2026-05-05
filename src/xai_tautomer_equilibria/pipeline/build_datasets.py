@@ -9,6 +9,7 @@ from xai_tautomer_equilibria.util.preprocess import (
     build_dataset,
     standardize_columns,
     filter_by_row_pickle,
+    move_rows,
 )
 
 from xai_tautomer_equilibria.util.ring_analysis import (
@@ -135,10 +136,20 @@ def main():
         "no_change_near": df[~df["neighbor_change"] & ~df["ring_change"]],
     }
 
+
+    subsets["change_in_arom_r"], subsets["change_near"] = move_rows(
+        subsets["change_in_arom_r"],
+        subsets["change_near"],
+        [227, 525]
+    )
+
+
     subsets["no_change_in_arom_r"] = pd.concat(
         [subsets["change_near"], subsets["no_change_near"]],
         ignore_index=True
     )
+
+
     # -------------------------
     # Feature configs
     # -------------------------
