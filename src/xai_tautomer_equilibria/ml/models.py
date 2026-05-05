@@ -9,7 +9,7 @@ def get_model(name, params, seed):
         return RandomForestRegressor(random_state=seed, **params)
 
     if name == "xgboost":
-        return XGBRegressor(random_state=seed, tree_method="hist", **params)
+        return XGBRegressor(random_state=seed, **params)
 
     if name == "ridge":
         return Ridge(**params)
