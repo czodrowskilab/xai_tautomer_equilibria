@@ -1,0 +1,9 @@
+{
+  "subset": "change_near",
+  "radius": 2,
+  "n_bits": 8192,
+  "target": "ddg",
+  "n_features": 477,
+  "variant": "with_arom_diff",
+  "scaling": "standard_all_features"
+}

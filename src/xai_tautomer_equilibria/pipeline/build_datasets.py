@@ -3,6 +3,7 @@ import numpy as np
 import json
 from pathlib import Path
 from typing import Tuple
+from sklearn.preprocessing import StandardScaler
 
 from xai_tautomer_equilibria.util.preprocess import (
     build_tautomer_pair,
@@ -160,6 +161,8 @@ def main():
 
     registry = []
 
+
+
     # -------------------------
     # Run experiments
     # -------------------------
@@ -167,7 +170,7 @@ def main():
 
         print(f"\nProcessing subset: {subset_name}")
 
-        subset_df = build_dataset(subset_df)
+        subset_df = build_dataset(subset_df) 
         subset_df = filter_by_row_pickle(subset_df, WIEDER_ROWS_PATH)
 
         subset_dir = BASE_DIR / subset_name
@@ -180,52 +183,84 @@ def main():
                 X, df_valid = build_features(subset_df, radius, n_bits)
 
                 # -------------------------
-                # remove constant features
+                # extract aromatic feature
+                # -------------------------
+                rel_arom = df_valid["relative_arom_difference"].values.reshape(-1, 1)
+
+                # -------------------------
+                # remove constant fingerprint features
                 # -------------------------
                 X_df = pd.DataFrame(X)
 
                 mask = X_df.nunique() != 1
                 X_df = X_df.loc[:, mask]
 
-                X = X_df.values
+                # base data
+                X_base = X_df.values
                 y = df_valid["ddg"].values
+                feature_names_base = X_df.columns.tolist()
 
-                feature_names = X_df.columns.tolist()
-
-                config = {
-                    "subset": subset_name,
-                    "radius": radius,
-                    "n_bits": n_bits,
-                    "target": "ddg",
-                    "n_features": X.shape[1]
+                # -------------------------
+                # create BOTH variants (UNSCALED first)
+                # -------------------------
+                variants = {
+                    "no_arom_diff": (
+                        X_base,
+                        feature_names_base
+                    ),
+                    "with_arom_diff": (
+                        np.hstack([X_base, rel_arom]),
+                        feature_names_base + ["relative_arom_difference"]
+                    )
                 }
 
-                dataset_id = f"r{radius}_b{n_bits}_v1"
-                out_dir = subset_dir / dataset_id
+                # -------------------------
+                # scale ALL features per variant
+                # -------------------------
+                for variant_name, (X_curr, feature_names_curr) in variants.items():
 
-                save_dataset(X, y, feature_names, config, out_dir)
+                    scaler = StandardScaler()
+                    X_scaled = scaler.fit_transform(X_curr)
+
+                    config = {
+                        "subset": subset_name,
+                        "radius": radius,
+                        "n_bits": n_bits,
+                        "target": "ddg",
+                        "n_features": X_scaled.shape[1],
+                        "variant": variant_name,
+                        "scaling": "standard_all_features"
+                    }
+
+                    dataset_id = f"r{radius}_b{n_bits}_{variant_name}_scaled_v1"
+                    out_dir = subset_dir / dataset_id
+
+                    save_dataset(X_scaled, y, feature_names_curr, config, out_dir)
+
+                    # -------------------------
+                    # registry entry
+                    # -------------------------
+                    registry.append({
+                        "dataset_id": dataset_id,
+                        "subset": subset_name,
+                        "path": str(out_dir),
+                        "radius": radius,
+                        "n_bits": n_bits,
+                        "n_features": X_scaled.shape[1],
+                        "variant": variant_name,
+                        "scaled": True
+                    })
+
+                    print(f"saved {subset_name}/{dataset_id}")
 
                 # -------------------------
-                # registry entry (CRITICAL for ML systems)
+                # update registry
                 # -------------------------
-                registry.append({
-                    "dataset_id": dataset_id,
-                    "subset": subset_name,
-                    "path": str(out_dir),
-                    "radius": radius,
-                    "n_bits": n_bits,
-                    "n_features": X.shape[1]
-                })
-
-                print(f"saved {subset_name}/{dataset_id}")
-                
                 registry_path = BASE_DIR / "registry.json"
 
                 with open(registry_path, "w") as f:
                     json.dump(registry, f, indent=2)
 
                 print(f"\nSaved dataset registry at {registry_path}")
-
-
 if __name__ == "__main__":
     main()

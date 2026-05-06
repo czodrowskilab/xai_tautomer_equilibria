@@ -1,7 +1,0 @@
-{
-  "subset": "change_in_arom_r",
-  "radius": 3,
-  "n_bits": 4096,
-  "target": "ddg",
-  "n_features": 2910
-}

@@ -10,6 +10,7 @@ src/xai_tautomer_equilibria/ml/data.py
 src/xai_tautomer_equilibria/ml/mlflow_utils.py
 src/xai_tautomer_equilibria/ml/models.py
 src/xai_tautomer_equilibria/ml/registry.py
+src/xai_tautomer_equilibria/ml/search_spaces.py
 src/xai_tautomer_equilibria/ml/training.py
 src/xai_tautomer_equilibria/ml/tuning.py
 src/xai_tautomer_equilibria/pipeline/build_datasets.py
