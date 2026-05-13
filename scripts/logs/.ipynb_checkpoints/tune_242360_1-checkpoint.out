@@ -1,0 +1,174 @@
+Running on cpu0018
+Worker ID: 1
+Waiting for PostgreSQL at cpu0011:5432...
+cpu0011:5432 - accepting connections
+Optuna DB: sqlite:///optuna_demo.db
+EXECUTING FILE: /fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster_demo.py
+PACKAGE PATH: /fshpc/limmiche/projects/xai_tautomer_equilibria/src/xai_tautomer_equilibria/__init__.py
+### NEW VERSION LOADED ###
+Task: 1
+Optuna DB: sqlite:///optuna_demo.db
+[TASK 1] Found 96 datasets
+[TASK 1] Loading dataset: r2_b1024_no_arom_diff_scaled_v1
+[TASK 1] Running study: r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:14:00,481] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:11,882] Trial 1 finished with value: 20.80034961824294 and parameters: {'n_estimators': 414, 'max_features': 0.8073271217633061, 'max_depth': 30, 'min_samples_split': 2, 'min_samples_leaf': 3, 'bootstrap': True}. Best is trial 0 with value: 18.368178772193005.
+[I 2026-05-07 10:14:34,424] Trial 5 finished with value: 19.729996228089007 and parameters: {'n_estimators': 365, 'max_features': 0.7892758930210697, 'max_depth': 47, 'min_samples_split': 4, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 0 with value: 18.368178772193005.
+[TASK 1] Finished: r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Best value: 18.368178772193005
+[TASK 1] Running study: r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:14:34,541] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:34,838] Trial 4 finished with value: 25.3113334766599 and parameters: {'alpha': 0.2788825274167937, 'fit_intercept': True, 'max_iter': 941}. Best is trial 2 with value: 25.28938654022737.
+[I 2026-05-07 10:14:35,085] Trial 5 finished with value: 182.38231970514886 and parameters: {'alpha': 0.34922018112181563, 'fit_intercept': False, 'max_iter': 901}. Best is trial 2 with value: 25.28938654022737.
+[TASK 1] Finished: r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Best value: 25.28938654022737
+[TASK 1] Running study: r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:14:35,179] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:35,559] Trial 4 finished with value: 22.827466369968977 and parameters: {'alpha': 0.15618279055532483, 'fit_intercept': True, 'max_iter': 856}. Best is trial 4 with value: 22.827466369968977.
+[I 2026-05-07 10:14:35,821] Trial 5 finished with value: 36.297938229858396 and parameters: {'alpha': 0.9802514493262551, 'fit_intercept': False, 'max_iter': 621}. Best is trial 4 with value: 22.827466369968977.
+[TASK 1] Finished: r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Best value: 22.827466369968977
+[TASK 1] Running study: r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:14:35,927] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:36,487] Trial 4 finished with value: 22.917871611853805 and parameters: {'alpha': 0.052202222661012765, 'l1_ratio': 0.2419589274433314, 'fit_intercept': True, 'max_iter': 687}. Best is trial 4 with value: 22.917871611853805.
+[I 2026-05-07 10:14:36,905] Trial 5 finished with value: 22.852390901510795 and parameters: {'alpha': 0.1358427809343799, 'l1_ratio': 0.15829912682408298, 'fit_intercept': True, 'max_iter': 603}. Best is trial 5 with value: 22.852390901510795.
+[TASK 1] Finished: r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Best value: 22.852390901510795
+[TASK 1] Running study: r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:14:37,031] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:41,458] Trial 4 finished with value: 17.338208349769378 and parameters: {'n_estimators': 666, 'learning_rate': 0.038366197972901604, 'max_depth': 8, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.98709180806157, 'colsample_bytree': 0.7588557069272206, 'reg_alpha': 0.06459171179829121, 'reg_lambda': 0.46728256469218005}. Best is trial 4 with value: 17.338208349769378.
+[I 2026-05-07 10:14:46,567] Trial 5 finished with value: 18.73511325898053 and parameters: {'n_estimators': 770, 'learning_rate': 0.20299153876467368, 'max_depth': 8, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.790837774242406, 'colsample_bytree': 0.8087448332996166, 'reg_alpha': 0.27295984054336225, 'reg_lambda': 0.848424469478461}. Best is trial 4 with value: 17.338208349769378.
+[TASK 1] Finished: r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Best value: 17.338208349769378
+[TASK 1] Loading dataset: r2_b1024_with_arom_diff_scaled_v1
+[TASK 1] Running study: r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:14:46,698] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:53,641] Trial 3 finished with value: 19.013734749404914 and parameters: {'n_estimators': 482, 'max_features': 0.2995554963287392, 'max_depth': 33, 'min_samples_split': 3, 'min_samples_leaf': 3, 'bootstrap': True}. Best is trial 1 with value: 16.432016220215708.
+[I 2026-05-07 10:14:55,120] Trial 5 finished with value: 19.368425396132164 and parameters: {'n_estimators': 86, 'max_features': 0.25338322631556026, 'max_depth': 14, 'min_samples_split': 9, 'min_samples_leaf': 1, 'bootstrap': True}. Best is trial 1 with value: 16.432016220215708.
+[TASK 1] Finished: r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Best value: 16.432016220215708
+[TASK 1] Running study: r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:14:55,269] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:55,715] Trial 4 finished with value: 181.71651070378894 and parameters: {'alpha': 0.8495209924865751, 'fit_intercept': False, 'max_iter': 914}. Best is trial 2 with value: 25.440110092007767.
+[I 2026-05-07 10:14:56,167] Trial 5 finished with value: 25.373269853674937 and parameters: {'alpha': 0.5263189430415667, 'fit_intercept': True, 'max_iter': 710}. Best is trial 5 with value: 25.373269853674937.
+[TASK 1] Finished: r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Best value: 25.373269853674937
+[TASK 1] Running study: r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:14:56,331] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:56,770] Trial 4 finished with value: 29.389260315664522 and parameters: {'alpha': 0.7798903266639581, 'fit_intercept': True, 'max_iter': 853}. Best is trial 1 with value: 22.853208782422833.
+[I 2026-05-07 10:14:57,141] Trial 5 finished with value: 29.235101656690233 and parameters: {'alpha': 0.7583582438861393, 'fit_intercept': True, 'max_iter': 467}. Best is trial 1 with value: 22.853208782422833.
+[TASK 1] Finished: r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Best value: 22.853208782422833
+[TASK 1] Running study: r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:14:57,261] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:14:57,667] Trial 4 finished with value: 23.72235714263332 and parameters: {'alpha': 0.34023692361218066, 'l1_ratio': 0.8296609713108687, 'fit_intercept': True, 'max_iter': 108}. Best is trial 2 with value: 22.910092747081553.
+[I 2026-05-07 10:14:58,041] Trial 5 finished with value: 34.77297659942444 and parameters: {'alpha': 0.5632664838655669, 'l1_ratio': 0.8080067795133685, 'fit_intercept': False, 'max_iter': 218}. Best is trial 2 with value: 22.910092747081553.
+[TASK 1] Finished: r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Best value: 22.910092747081553
+[TASK 1] Running study: r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:14:58,197] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:03,066] Trial 3 finished with value: 16.49731670483906 and parameters: {'n_estimators': 432, 'learning_rate': 0.06648960148263193, 'max_depth': 10, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.7624924356671234, 'colsample_bytree': 0.8311264757692843, 'reg_alpha': 0.4723020759364444, 'reg_lambda': 0.7411328005872939}. Best is trial 3 with value: 16.49731670483906.
+[I 2026-05-07 10:15:06,258] Trial 5 finished with value: 17.748048236072368 and parameters: {'n_estimators': 342, 'learning_rate': 0.1827061148750225, 'max_depth': 9, 'min_child_weight': 5, 'gamma': 0, 'subsample': 0.9882211680263099, 'colsample_bytree': 0.959405945845643, 'reg_alpha': 0.21837089663288634, 'reg_lambda': 0.32690656200864804}. Best is trial 3 with value: 16.49731670483906.
+[TASK 1] Finished: r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Best value: 16.49731670483906
+[TASK 1] Loading dataset: r2_b2048_no_arom_diff_scaled_v1
+[TASK 1] Running study: r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:15:06,412] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:13,135] Trial 3 finished with value: 17.797169066885374 and parameters: {'n_estimators': 291, 'max_features': 0.22497159288788446, 'max_depth': 48, 'min_samples_split': 10, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 3 with value: 17.797169066885374.
+[I 2026-05-07 10:15:16,635] Trial 5 finished with value: 18.6076954969924 and parameters: {'n_estimators': 174, 'max_features': 0.3222619860890126, 'max_depth': 19, 'min_samples_split': 5, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 3 with value: 17.797169066885374.
+[TASK 1] Finished: r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Best value: 17.797169066885374
+[TASK 1] Running study: r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:15:16,743] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:17,041] Trial 2 finished with value: 25.724443184526894 and parameters: {'alpha': 0.4509749185520099, 'fit_intercept': True, 'max_iter': 128}. Best is trial 1 with value: 25.715516397638368.
+[I 2026-05-07 10:15:17,325] Trial 3 finished with value: 25.717503135302803 and parameters: {'alpha': 0.7362966638710886, 'fit_intercept': True, 'max_iter': 558}. Best is trial 1 with value: 25.715516397638368.
+[TASK 1] Finished: r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Best value: 25.715516397638368
+[TASK 1] Running study: r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:15:17,425] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:17,822] Trial 2 finished with value: 26.939747078225498 and parameters: {'alpha': 0.4548888983850402, 'fit_intercept': True, 'max_iter': 683}. Best is trial 2 with value: 26.939747078225498.
+[I 2026-05-07 10:15:18,143] Trial 3 finished with value: 34.44413008387202 and parameters: {'alpha': 0.48863758059897827, 'fit_intercept': False, 'max_iter': 784}. Best is trial 2 with value: 26.939747078225498.
+[TASK 1] Finished: r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Best value: 26.939747078225498
+[TASK 1] Running study: r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:15:18,253] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.692e+00, tolerance: 1.376e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:15:18,773] Trial 2 finished with value: 122.937003023035 and parameters: {'alpha': 0.09815242858791651, 'l1_ratio': 0.667341511123992, 'fit_intercept': False, 'max_iter': 373}. Best is trial 1 with value: 25.77738042189542.
+[I 2026-05-07 10:15:19,136] Trial 3 finished with value: 24.17718575516378 and parameters: {'alpha': 0.5108816106209555, 'l1_ratio': 0.29018316423304424, 'fit_intercept': True, 'max_iter': 806}. Best is trial 3 with value: 24.17718575516378.
+[TASK 1] Finished: r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Best value: 24.17718575516378
+[TASK 1] Running study: r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:15:19,261] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:26,428] Trial 2 finished with value: 17.93300944090273 and parameters: {'n_estimators': 712, 'learning_rate': 0.18276629867792693, 'max_depth': 9, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.7561319804508152, 'colsample_bytree': 0.83175501350595, 'reg_alpha': 0.7238819743145612, 'reg_lambda': 0.7386952811424816}. Best is trial 2 with value: 17.93300944090273.
+[I 2026-05-07 10:15:33,268] Trial 3 finished with value: 16.83793792961499 and parameters: {'n_estimators': 984, 'learning_rate': 0.08120011297544226, 'max_depth': 6, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.9866400830816529, 'colsample_bytree': 0.8023119445600182, 'reg_alpha': 0.21815856995195312, 'reg_lambda': 0.17913114580495348}. Best is trial 3 with value: 16.83793792961499.
+[TASK 1] Finished: r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Best value: 16.83793792961499
+[TASK 1] Loading dataset: r2_b2048_with_arom_diff_scaled_v1
+[TASK 1] Running study: r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:15:33,422] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:37,760] Trial 2 finished with value: 16.299961470903323 and parameters: {'n_estimators': 154, 'max_features': 0.27615877343147316, 'max_depth': 39, 'min_samples_split': 7, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 2 with value: 16.299961470903323.
+[I 2026-05-07 10:15:51,129] Trial 3 finished with value: 19.54189909197177 and parameters: {'n_estimators': 262, 'max_features': 0.836391383675347, 'max_depth': 36, 'min_samples_split': 3, 'min_samples_leaf': 4, 'bootstrap': False}. Best is trial 2 with value: 16.299961470903323.
+[TASK 1] Finished: r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Best value: 16.299961470903323
+[TASK 1] Running study: r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:15:51,292] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:51,591] Trial 2 finished with value: 25.764891151742347 and parameters: {'alpha': 0.8551238056536038, 'fit_intercept': True, 'max_iter': 569}. Best is trial 1 with value: 25.762663770010327.
+[I 2026-05-07 10:15:51,856] Trial 3 finished with value: 170.49002402079077 and parameters: {'alpha': 0.1497559522905342, 'fit_intercept': False, 'max_iter': 286}. Best is trial 1 with value: 25.762663770010327.
+[TASK 1] Finished: r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 1] Best value: 25.762663770010327
+[TASK 1] Running study: r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:15:51,956] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:52,309] Trial 2 finished with value: 34.25573942169615 and parameters: {'alpha': 0.5176508268106998, 'fit_intercept': False, 'max_iter': 500}. Best is trial 1 with value: 27.238662646080137.
+[I 2026-05-07 10:15:52,729] Trial 3 finished with value: 24.242512432600144 and parameters: {'alpha': 0.21417551729164436, 'fit_intercept': True, 'max_iter': 521}. Best is trial 3 with value: 24.242512432600144.
+[TASK 1] Finished: r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 1] Best value: 24.242512432600144
+[TASK 1] Running study: r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:15:52,864] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.960e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.507e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.567e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.848e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.788e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.871e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:15:53,280] Trial 2 finished with value: 22.42549757742317 and parameters: {'alpha': 0.10220813961463679, 'l1_ratio': 0.4922840313799025, 'fit_intercept': True, 'max_iter': 105}. Best is trial 2 with value: 22.42549757742317.
+[I 2026-05-07 10:15:53,642] Trial 3 finished with value: 70.81998617785663 and parameters: {'alpha': 0.4218262115011674, 'l1_ratio': 0.1756941594399789, 'fit_intercept': False, 'max_iter': 936}. Best is trial 2 with value: 22.42549757742317.
+[TASK 1] Finished: r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 1] Best value: 22.42549757742317
+[TASK 1] Running study: r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:15:53,738] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:15:56,326] Trial 2 finished with value: 17.190261773338026 and parameters: {'n_estimators': 214, 'learning_rate': 0.20232762060250511, 'max_depth': 5, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.8354999722601721, 'colsample_bytree': 0.8704059647617444, 'reg_alpha': 0.9744388821591498, 'reg_lambda': 0.2696421993888452}. Best is trial 2 with value: 17.190261773338026.
+[I 2026-05-07 10:16:03,189] Trial 3 finished with value: 15.96529081218009 and parameters: {'n_estimators': 629, 'learning_rate': 0.1658302762192828, 'max_depth': 9, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.8284593983522559, 'colsample_bytree': 0.8955526117883427, 'reg_alpha': 0.9110223502733389, 'reg_lambda': 0.15775355672888186}. Best is trial 3 with value: 15.96529081218009.
+[TASK 1] Finished: r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 1] Best value: 15.96529081218009
+[TASK 1] Loading dataset: r2_b4096_no_arom_diff_scaled_v1
+[TASK 1] Running study: r2_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 1] Attempt 1/10 for r2_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:16:03,391] Using an existing study with name 'r2_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:16:07,072] Trial 2 finished with value: 20.596088486873747 and parameters: {'n_estimators': 151, 'max_features': 0.4990391440439177, 'max_depth': 20, 'min_samples_split': 2, 'min_samples_leaf': 4, 'bootstrap': True}. Best is trial 0 with value: 18.431469972233277.

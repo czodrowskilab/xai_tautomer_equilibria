@@ -1,0 +1,6 @@
+Starting on cpu0011
+PostgreSQL will run on: cpu0011:5432
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....... done
+server started
+localhost:5432 - accepting connections

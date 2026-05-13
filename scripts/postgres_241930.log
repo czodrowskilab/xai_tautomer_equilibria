@@ -1,0 +1,4 @@
+Starting on cpu0018
+PostgreSQL will run on: cpu0018:5432
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start.........................................slurmstepd: error: *** JOB 241930 ON cpu0018 CANCELLED AT 2026-05-07T03:39:25 ***

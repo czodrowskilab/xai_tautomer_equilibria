@@ -1,0 +1,6 @@
+Running on cpu0687
+Worker ID: 5
+Waiting for PostgreSQL at cpu0011:5432...
+cpu0011:5432 - accepting connections
+MLflow URI: postgresql+psycopg2://limmiche@cpu0011:5432/mlflow_db
+Optuna DB: postgresql://limmiche@cpu0011:5432/optuna_db

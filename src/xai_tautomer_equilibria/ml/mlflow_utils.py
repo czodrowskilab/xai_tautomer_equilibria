@@ -1,7 +1,11 @@
+import os
 import mlflow
 import pandas as pd
 
-def setup_mlflow(experiment_name: str):
+def setup_mlflow(experiment_name: str, tracking_uri):
+    if tracking_uri:
+        mlflow.set_tracking_uri(tracking_uri)
+
     mlflow.set_experiment(experiment_name)
 
 
@@ -17,8 +21,8 @@ def log_model_and_metrics(model, metrics, params, dataset_meta):
 
 
 
-def get_best_params(experiment_name, dataset, model, seed):
-    client = mlflow.tracking.MlflowClient()
+def get_best_params(experiment_name, dataset, model, seed, tracking_uri):
+    client = mlflow.tracking.MlflowClient(tracking_uri=tracking_uri)
 
     exp = client.get_experiment_by_name(experiment_name)
 
@@ -38,10 +42,8 @@ def get_best_params(experiment_name, dataset, model, seed):
 
     best_run = runs.iloc[0]
 
-    params = {
+    return {
         k.replace("params.", ""): v
         for k, v in best_run.items()
         if k.startswith("params.")
     }
-
-    return params

@@ -99,7 +99,7 @@ def build_tautomer_pair(smi_t1, smi_t2):
 
 
 RENAME_MAP = {
-    "log_K_x": "K (T/E/M)",
+    "log_K_x": "K",
     "smi_t1": "t1_smiles",
     "smi_t2": "t2_smiles",
     "murcko_smiles_x": "murcko_smiles",

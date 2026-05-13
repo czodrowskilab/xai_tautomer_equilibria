@@ -1,0 +1,751 @@
+Running on cpu0658
+Worker ID: 13
+Waiting for PostgreSQL at cpu0687:5432...
+cpu0687:5432 - accepting connections
+MLflow URI: postgresql+psycopg2://limmiche@cpu0687:5432/mlflow_db
+Optuna DB: postgresql://limmiche@cpu0687:5432/optuna_db
+2026/05/06 18:26:19 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 0.1 seconds
+2026/05/06 18:26:19 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 0.3 seconds
+2026/05/06 18:26:20 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 0.7 seconds
+2026/05/06 18:26:20 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 1.5 seconds
+2026/05/06 18:26:22 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 3.1 seconds
+2026/05/06 18:26:25 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 6.3 seconds
+2026/05/06 18:26:31 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 12.7 seconds
+2026/05/06 18:26:44 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 25.5 seconds
+2026/05/06 18:27:10 WARNING mlflow.store.db.utils: SQLAlchemy engine could not be created. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Operation will be retried in 51.1 seconds
+[I 2026-05-06 18:28:01,572] Using an existing study with name 'r2_b1024_v1_random_forest_unknown_seed42' instead of creating a new one.
+[I 2026-05-06 18:28:04,524] Trial 605 finished with value: 17.369464598771 and parameters: {'n_estimators': 71, 'max_features': 0.25092059788201987, 'max_depth': 48, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:05,560] Trial 608 finished with value: 17.055730322079846 and parameters: {'n_estimators': 85, 'max_features': 0.10074122152765824, 'max_depth': 46, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:06,720] Trial 611 finished with value: 17.390848309046834 and parameters: {'n_estimators': 74, 'max_features': 0.15214095921846799, 'max_depth': 48, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:07,665] Trial 613 finished with value: 17.289637802936607 and parameters: {'n_estimators': 51, 'max_features': 0.19008562638470083, 'max_depth': 49, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:08,408] Trial 614 finished with value: 19.391566929428638 and parameters: {'n_estimators': 64, 'max_features': 0.13238972017722034, 'max_depth': 48, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:09,563] Trial 616 finished with value: 17.153474564744393 and parameters: {'n_estimators': 89, 'max_features': 0.1142782407789209, 'max_depth': 49, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:10,672] Trial 618 finished with value: 17.738754183361554 and parameters: {'n_estimators': 65, 'max_features': 0.16971770813261053, 'max_depth': 47, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:11,837] Trial 620 finished with value: 17.72577346205428 and parameters: {'n_estimators': 77, 'max_features': 0.14381720090833458, 'max_depth': 49, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:14,058] Trial 623 finished with value: 18.186219339505833 and parameters: {'n_estimators': 59, 'max_features': 0.4860786417291125, 'max_depth': 47, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:15,801] Trial 626 finished with value: 17.3270474895267 and parameters: {'n_estimators': 95, 'max_features': 0.1950443514733266, 'max_depth': 46, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:16,900] Trial 628 finished with value: 17.13438618322943 and parameters: {'n_estimators': 70, 'max_features': 0.15350026083270046, 'max_depth': 48, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:18,092] Trial 630 finished with value: 17.21727253374129 and parameters: {'n_estimators': 86, 'max_features': 0.1287067629000018, 'max_depth': 49, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:19,439] Trial 632 finished with value: 16.834656732660438 and parameters: {'n_estimators': 80, 'max_features': 0.1732696958302729, 'max_depth': 50, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:21,073] Trial 633 finished with value: 17.350411190685797 and parameters: {'n_estimators': 99, 'max_features': 0.17055569138615972, 'max_depth': 50, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:22,430] Trial 634 finished with value: 17.440436543203255 and parameters: {'n_estimators': 78, 'max_features': 0.18217190491865148, 'max_depth': 50, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:23,883] Trial 635 finished with value: 17.141261301320714 and parameters: {'n_estimators': 92, 'max_features': 0.15637096750580126, 'max_depth': 50, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:25,045] Trial 636 finished with value: 17.72577346205428 and parameters: {'n_estimators': 77, 'max_features': 0.14427630630728638, 'max_depth': 49, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:26,465] Trial 637 finished with value: 17.279041708245128 and parameters: {'n_estimators': 85, 'max_features': 0.1675826739431975, 'max_depth': 47, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:27,931] Trial 638 finished with value: 16.90484168718398 and parameters: {'n_estimators': 99, 'max_features': 0.1406747845152011, 'max_depth': 50, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:29,341] Trial 639 finished with value: 17.27054607895717 and parameters: {'n_estimators': 90, 'max_features': 0.15264169538921066, 'max_depth': 46, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 444 with value: 16.682174737648552.
+[I 2026-05-06 18:28:29,439] Using an existing study with name 'r2_b1024_v1_random_forest_unknown_seed43' instead of creating a new one.
+[I 2026-05-06 18:28:35,472] Trial 242 finished with value: 16.92020738219267 and parameters: {'n_estimators': 425, 'max_features': 0.14184499164332867, 'max_depth': 37, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:28:42,317] Trial 244 finished with value: 17.164061770048463 and parameters: {'n_estimators': 442, 'max_features': 0.16179043541135357, 'max_depth': 38, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:28:44,313] Trial 246 finished with value: 17.0730933098507 and parameters: {'n_estimators': 136, 'max_features': 0.1446444480503941, 'max_depth': 37, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:28:51,221] Trial 247 finished with value: 17.156162619712866 and parameters: {'n_estimators': 449, 'max_features': 0.16269771078722284, 'max_depth': 35, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:28:57,029] Trial 249 finished with value: 17.044143104908244 and parameters: {'n_estimators': 422, 'max_features': 0.13765617987693862, 'max_depth': 38, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:00,419] Trial 252 finished with value: 17.01998699004973 and parameters: {'n_estimators': 256, 'max_features': 0.1268235141745083, 'max_depth': 39, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:07,866] Trial 254 finished with value: 17.178895222875713 and parameters: {'n_estimators': 411, 'max_features': 0.20763831175003417, 'max_depth': 40, 'min_samples_split': 5, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:10,825] Trial 256 finished with value: 17.14506362327336 and parameters: {'n_estimators': 257, 'max_features': 0.10328221005188969, 'max_depth': 39, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:11,856] Trial 258 finished with value: 17.010235681544312 and parameters: {'n_estimators': 75, 'max_features': 0.1246613198016703, 'max_depth': 38, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:12,560] Trial 259 finished with value: 17.592900053014034 and parameters: {'n_estimators': 50, 'max_features': 0.12306905376745297, 'max_depth': 38, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:15,738] Trial 261 finished with value: 17.172376686558586 and parameters: {'n_estimators': 246, 'max_features': 0.12278054994657484, 'max_depth': 39, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:17,151] Trial 263 finished with value: 17.07027150513522 and parameters: {'n_estimators': 92, 'max_features': 0.15061089013606668, 'max_depth': 41, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:19,191] Trial 265 finished with value: 19.758523560583978 and parameters: {'n_estimators': 220, 'max_features': 0.12089175050896217, 'max_depth': 14, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:20,170] Trial 267 finished with value: 17.125340610259403 and parameters: {'n_estimators': 67, 'max_features': 0.1374818138423058, 'max_depth': 40, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:23,460] Trial 268 finished with value: 17.30043720861625 and parameters: {'n_estimators': 206, 'max_features': 0.16674829844837158, 'max_depth': 39, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:26,136] Trial 270 finished with value: 17.27968586565002 and parameters: {'n_estimators': 233, 'max_features': 0.10263723156964605, 'max_depth': 39, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:29,484] Trial 272 finished with value: 17.17006857571209 and parameters: {'n_estimators': 265, 'max_features': 0.12349931742984711, 'max_depth': 40, 'min_samples_split': 5, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:30,372] Trial 274 finished with value: 17.600023191841636 and parameters: {'n_estimators': 65, 'max_features': 0.12630098632968043, 'max_depth': 40, 'min_samples_split': 5, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:31,646] Trial 275 finished with value: 17.27512983757277 and parameters: {'n_estimators': 99, 'max_features': 0.11933904562828122, 'max_depth': 41, 'min_samples_split': 5, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:35,369] Trial 277 finished with value: 16.953641143120034 and parameters: {'n_estimators': 266, 'max_features': 0.1393463526275948, 'max_depth': 38, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 210 with value: 16.895050770807888.
+[I 2026-05-06 18:29:35,471] Using an existing study with name 'r2_b1024_v1_random_forest_unknown_seed44' instead of creating a new one.
+[I 2026-05-06 18:29:38,762] Trial 240 finished with value: 17.30076989672878 and parameters: {'n_estimators': 248, 'max_features': 0.12361829431694613, 'max_depth': 39, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+[I 2026-05-06 18:29:45,379] Trial 242 finished with value: 17.249338411954586 and parameters: {'n_estimators': 489, 'max_features': 0.13445156034331213, 'max_depth': 41, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+[I 2026-05-06 18:29:52,661] Trial 243 finished with value: 17.086776840581926 and parameters: {'n_estimators': 495, 'max_features': 0.15108924161940585, 'max_depth': 41, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+[I 2026-05-06 18:29:57,100] Trial 245 finished with value: 17.25464728778176 and parameters: {'n_estimators': 286, 'max_features': 0.16131772667131383, 'max_depth': 41, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+[I 2026-05-06 18:30:04,584] Trial 247 finished with value: 17.246690841678788 and parameters: {'n_estimators': 500, 'max_features': 0.15494588524899572, 'max_depth': 42, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+[I 2026-05-06 18:30:13,402] Trial 250 finished with value: 17.236602036125078 and parameters: {'n_estimators': 488, 'max_features': 0.20183798352209997, 'max_depth': 40, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+[I 2026-05-06 18:30:19,598] Trial 252 finished with value: 17.25565590940356 and parameters: {'n_estimators': 478, 'max_features': 0.12571793044220514, 'max_depth': 37, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+[I 2026-05-06 18:30:28,069] Trial 254 finished with value: 17.35304909470607 and parameters: {'n_estimators': 485, 'max_features': 0.19930294891764308, 'max_depth': 39, 'min_samples_split': 5, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 192 with value: 16.922756140642587.
+2026/05/06 18:30:36 ERROR mlflow.store.db.utils: SQLAlchemy database error. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1311, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1345, in _checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1342, in _checkout
+    fairy._connection_record.get_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 836, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/mlflow/store/db/utils.py", line 149, in make_managed_session
+    yield session
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 1940, in log_batch
+    run = self._get_run(run_uuid=run_id, session=session)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 842, in _get_run
+    .all()
+     ~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2239, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2108, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1187, in _connection_for_bind
+    conn = bind.connect()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3285, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1345, in _checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1342, in _checkout
+    fairy._connection_record.get_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 836, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Slurm task: 13
+Using Optuna DB: postgresql://limmiche@cpu0687:5432/optuna_db
+Using MLflow: postgresql+psycopg2://limmiche@cpu0687:5432/mlflow_db
+
+Tuning: r2_b1024_v1 | variant=unknown
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 79, in _create_scoped_session
+    yield session
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 794, in get_trial
+    trial_model = models.TrialModel.find_or_raise_by_id(trial_id, session)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/models.py", line 270, in find_or_raise_by_id
+    trial = query.one_or_none()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2785, in one_or_none
+    return self._iter().one_or_none()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT trials.trial_id AS trials_trial_id, trials.number AS trials_number, trials.study_id AS trials_study_id, trials.state AS trials_state, trials.datetime_start AS trials_datetime_start, trials.datetime_complete AS trials_datetime_complete 
+FROM trials 
+WHERE trials.trial_id = %(trial_id_1)s]
+[parameters: {'trial_id_1': 1603}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/_optimize.py", line 217, in _run_trial
+    updated_state, values, warning_message = _tell_with_warning(
+                                             ~~~~~~~~~~~~~~~~~~^
+        study=study,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        suppress_warning=True,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/_tell.py", line 106, in _tell_with_warning
+    frozen_trial = _get_frozen_trial(study, trial)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/_tell.py", line 40, in _get_frozen_trial
+    return study._storage.get_trial(trial_id)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_cached_storage.py", line 214, in get_trial
+    return self._backend.get_trial(trial_id)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 793, in get_trial
+    with _create_scoped_session(self.scoped_session) as session:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 97, in _create_scoped_session
+    raise optuna.exceptions.StorageInternalError(message) from e
+optuna.exceptions.StorageInternalError: An exception is raised during the commit. This typically happens due to invalid data in the commit, e.g. exceeding max length. 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 714, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 865, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 79, in _create_scoped_session
+    yield session
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 794, in get_trial
+    trial_model = models.TrialModel.find_or_raise_by_id(trial_id, session)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/models.py", line 270, in find_or_raise_by_id
+    trial = query.one_or_none()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2785, in one_or_none
+    return self._iter().one_or_none()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2239, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2108, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1187, in _connection_for_bind
+    conn = bind.connect()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3285, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 714, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 865, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/_optimize.py", line 225, in _run_trial
+    frozen_trial = study._storage.get_trial(trial._trial_id)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_cached_storage.py", line 214, in get_trial
+    return self._backend.get_trial(trial_id)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 793, in get_trial
+    with _create_scoped_session(self.scoped_session) as session:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/storages/_rdb/storage.py", line 97, in _create_scoped_session
+    raise optuna.exceptions.StorageInternalError(message) from e
+optuna.exceptions.StorageInternalError: An exception is raised during the commit. This typically happens due to invalid data in the commit, e.g. exceeding max length. 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster.py", line 106, in <module>
+    main()
+    ~~~~^^
+  File "/fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster.py", line 77, in main
+    study.optimize(
+    ~~~~~~~~~~~~~~^
+        objective,
+        ^^^^^^^^^^
+        n_trials=n_trials,
+        ^^^^^^^^^^^^^^^^^^
+        n_jobs=1
+        ^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+    ~~~~~~~~~^
+        study=self,
+        ^^^^^^^^^^^
+    ...<7 lines>...
+        show_progress_bar=show_progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/_optimize.py", line 67, in _optimize
+    _optimize_sequential(
+    ~~~~~~~~~~~~~~~~~~~~^
+        study,
+        ^^^^^^
+    ...<8 lines>...
+        progress_bar=progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/_optimize.py", line 164, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/optuna/study/_optimize.py", line 231, in _run_trial
+    if updated_state == TrialState.COMPLETE:
+       ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'updated_state' where it is not associated with a value
+2026/05/06 18:30:36 ERROR mlflow.store.db.utils: SQLAlchemy database error. The following exception is caught.
+(psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 714, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 865, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/mlflow/store/db/utils.py", line 149, in make_managed_session
+    yield session
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 928, in update_run_info
+    run = self._get_run(run_uuid=run_id, session=session)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 842, in _get_run
+    .all()
+     ~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2239, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2108, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1187, in _connection_for_bind
+    conn = bind.connect()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3285, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 714, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 865, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "cpu0687" (10.81.5.175), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

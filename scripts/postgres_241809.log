@@ -1,0 +1,8 @@
+Starting on cpu0018
+PostgreSQL will run on: cpu0018:5432
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start......... done
+server started
+localhost:5432 - accepting connections
+PostgreSQL running. Press Ctrl+C to stop.
+slurmstepd: error: *** JOB 241809 ON cpu0018 CANCELLED AT 2026-05-07T02:29:42 DUE TO TIME LIMIT ***

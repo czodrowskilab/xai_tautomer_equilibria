@@ -27,7 +27,7 @@ def objective_factory(X, y, model_name, search_space, seed):
 
         model, metrics = train_model(model, X, y)
 
-        mlflow.log_metrics(metrics)
+
         # store extra mae in trial
         trial.set_user_attr("mae", metrics["mae"])
 

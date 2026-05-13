@@ -8,13 +8,20 @@ class DatasetRegistry:
     def __init__(self, root: Path):
         self.root = Path(root)
 
+
+
+
+
     def list_datasets(self):
         datasets = []
         for subset in self.root.iterdir():
-            if subset.is_dir():
-                for cfg in subset.iterdir():
-                    if (cfg / "X.npy").exists():
-                        datasets.append(cfg)
+            if not subset.is_dir():
+                continue
+    
+            for dataset in subset.iterdir():
+                if (dataset / "config.json").exists():
+                    datasets.append(dataset)
+    
         return datasets
 
     def load(self, dataset_path: Path):

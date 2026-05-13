@@ -1,0 +1,7 @@
+Running on cpu0654
+Worker ID: 10
+Waiting for PostgreSQL at cpu0011:5432...
+cpu0011:5432 - accepting connections
+MLflow URI: postgresql+psycopg2://limmiche@cpu0011:5432/mlflow_db
+Optuna DB: postgresql://limmiche@cpu0011:5432/optuna_db
+[I 2026-05-06 21:48:57,941] Using an existing study with name 'r2_b1024_v1_random_forest_unknown_seed42' instead of creating a new one.

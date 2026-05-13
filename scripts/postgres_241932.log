@@ -1,0 +1,5 @@
+Starting on cpu0683
+PostgreSQL will run on: cpu0683:5432
+waiting for server to start....... done
+server started
+slurmstepd: error: *** JOB 241932 ON cpu0683 CANCELLED AT 2026-05-07T03:39:25 ***

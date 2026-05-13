@@ -1,0 +1,9 @@
+Running on cpu0656
+Worker ID: 2
+Waiting for PostgreSQL at cpu0654:5432...
+cpu0654:5432 - accepting connections
+MLflow URI: postgresql+psycopg2://limmiche@cpu0654:5432/mlflow_db
+Optuna DB: postgresql://limmiche@cpu0654:5432/optuna_db
+SCRIPT PATH:
+-rw-r--r-- 1 limmiche physchemie 4123 May  6 23:17 /fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster_1.py
+🔥 EXECUTING FILE: /fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster_1.py

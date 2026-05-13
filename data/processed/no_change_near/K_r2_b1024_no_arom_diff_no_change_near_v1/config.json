@@ -1,0 +1,9 @@
+{
+  "subset": "no_change_near",
+  "radius": 2,
+  "n_bits": 1024,
+  "target": "K",
+  "n_features": 1024,
+  "variant": "no_arom_diff",
+  "scaling": "standard_all_features"
+}

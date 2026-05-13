@@ -1,3 +1,4 @@
+import os
 import mlflow
 from pathlib import Path
 
@@ -10,12 +11,19 @@ from xai_tautomer_equilibria.ml.mlflow_utils import (
     get_best_params
 )
 
+
+
+# -------------------------
+# set tracking for mlflow
+# -------------------------
+tracking_uri = os.environ.get("MLFLOW_TRACKING_URI")
+
 SEEDS = [42, 43, 44, 45, 46]
 
 
 def main():
 
-    setup_mlflow("tautomer_equilibria")
+    setup_mlflow("tautomer_equilibria_training", tracking_uri)
 
     registry = DatasetRegistry(Path("data/processed"))
     datasets = registry.list_datasets()
@@ -37,7 +45,8 @@ def main():
                 experiment_name="tautomer_optuna",
                 dataset=dataset_path.name,
                 model=config["model"],
-                seed=seed
+                seed=seed,
+                tracking_uri = tracking_uri
             )
 
             if best_params is None:

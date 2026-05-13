@@ -1,0 +1,9 @@
+{
+  "subset": "change_in_arom_r",
+  "radius": 3,
+  "n_bits": 2048,
+  "target": "K",
+  "n_features": 2048,
+  "variant": "no_arom_diff",
+  "scaling": "standard_all_features"
+}

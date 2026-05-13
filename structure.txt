@@ -65,3 +65,53 @@ mlflow server \
   --backend-store-uri sqlite:///mlflow.db \
   --default-artifact-root ./mlruns \
   --host 0.0.0.0
+
+
+project/
+│  
+├── data
+│   ├── external
+│   ├── processed
+│   │   ├── change_in_arom_r
+│   │   │   ├── r2_b1024_no_arom_diff_scaled_v1
+│   │   │   ├── r2_b1024_with_arom_diff_scaled_v1
+│   │   │   ├── r2_b2048_no_arom_diff_scaled_v1
+│   │   │   ├── r2_b2048_with_arom_diff_scaled_v1
+│   │   │   ├── r2_b4096_no_arom_diff_scaled_v1
+│   │   │   ├── r2_b4096_with_arom_diff_scaled_v1
+
+...
+│   │   └── no_change_near
+│   │       ├── r2_b1024_no_arom_diff_scaled_v1
+│   │       ├── r2_b1024_with_arom_diff_scaled_v1
+│   │       ├── r2_b2048_no_arom_diff_scaled_v1
+│   │       ├── r2_b2048_with_arom_diff_scaled_v1
+│   │       ├── r2_b4096_no_arom_diff_scaled_v1
+│   │       ├── r2_b4096_with_arom_diff_scaled_v1
+│   │       ├── r2_b8192_no_arom_diff_scaled_v1
+...
+│   └── raw
+├── scripts
+└── src
+    ├── __pycache__
+    ├── xai_tautomer_equilibria
+    │   ├── config
+    │   │   
+    │   ├── features
+    │   │   
+    │   ├── ml
+    │   │   
+    │   ├── pipeline
+    │   │   
+    │   └── util
+
+
+
+
+
+~/projects/xai_tautomer_equilibria_mogon$ mlflow ui   --backend-store-uri file:/mnt/czolab-storage-01/limmiche/projects/xai_tautomer_equilibria_mogon/mlruns_ui   --port 5000
+
+tags.model = "xgboost"
+
+
+tags.model = "xgboost" tags.radius= "r2"

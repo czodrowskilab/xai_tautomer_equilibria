@@ -1,0 +1,1110 @@
+Running on cpu0018
+Worker ID: 4
+Waiting for PostgreSQL at cpu0011:5432...
+cpu0011:5432 - accepting connections
+Optuna DB: sqlite:///optuna_demo.db
+EXECUTING FILE: /fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster_demo.py
+PACKAGE PATH: /fshpc/limmiche/projects/xai_tautomer_equilibria/src/xai_tautomer_equilibria/__init__.py
+### NEW VERSION LOADED ###
+Task: 4
+Optuna DB: sqlite:///optuna_demo.db
+[TASK 4] Found 96 datasets
+[TASK 4] Loading dataset: r2_b1024_no_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:46:13,061] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:14,198] Trial 10 finished with value: 20.699049898816703 and parameters: {'n_estimators': 76, 'max_features': 0.10078725133746219, 'max_depth': 30, 'min_samples_split': 10, 'min_samples_leaf': 4, 'bootstrap': False}. Best is trial 0 with value: 18.368178772193005.
+[I 2026-05-07 10:46:16,881] Trial 11 finished with value: 19.586215524092903 and parameters: {'n_estimators': 172, 'max_features': 0.24451860011131396, 'max_depth': 23, 'min_samples_split': 7, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 0 with value: 18.368178772193005.
+[TASK 4] Finished: r2_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 18.368178772193005
+[TASK 4] Running study: r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:46:17,016] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:17,419] Trial 10 finished with value: 25.285401739726844 and parameters: {'alpha': 0.9869585058104324, 'fit_intercept': True, 'max_iter': 662}. Best is trial 10 with value: 25.285401739726844.
+[I 2026-05-07 10:46:17,743] Trial 11 finished with value: 25.285026586244918 and parameters: {'alpha': 0.9995977820212014, 'fit_intercept': True, 'max_iter': 693}. Best is trial 11 with value: 25.285026586244918.
+[TASK 4] Finished: r2_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 25.285026586244918
+[TASK 4] Running study: r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:46:17,874] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:18,381] Trial 10 finished with value: 23.495363543954518 and parameters: {'alpha': 0.07122234077729306, 'fit_intercept': True, 'max_iter': 788}. Best is trial 4 with value: 22.827466369968977.
+[I 2026-05-07 10:46:19,003] Trial 11 finished with value: 23.804380584775906 and parameters: {'alpha': 0.04313592446096451, 'fit_intercept': True, 'max_iter': 800}. Best is trial 4 with value: 22.827466369968977.
+[TASK 4] Finished: r2_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 22.827466369968977
+[TASK 4] Running study: r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:46:19,151] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:19,684] Trial 10 finished with value: 22.89133289666927 and parameters: {'alpha': 0.2536108013426144, 'l1_ratio': 0.7227808953854595, 'fit_intercept': True, 'max_iter': 391}. Best is trial 5 with value: 22.852390901510795.
+[I 2026-05-07 10:46:20,263] Trial 11 finished with value: 22.74233184388148 and parameters: {'alpha': 0.2260384956557272, 'l1_ratio': 0.7599145900267813, 'fit_intercept': True, 'max_iter': 365}. Best is trial 11 with value: 22.74233184388148.
+[TASK 4] Finished: r2_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 22.74233184388148
+[TASK 4] Running study: r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:46:20,410] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:23,638] Trial 10 finished with value: 19.57276525842377 and parameters: {'n_estimators': 182, 'learning_rate': 0.01640204443414017, 'max_depth': 10, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.889095832357775, 'colsample_bytree': 0.7681638870904507, 'reg_alpha': 0.7001576357357602, 'reg_lambda': 0.6392555642337769}. Best is trial 4 with value: 17.338208349769378.
+[I 2026-05-07 10:46:28,929] Trial 11 finished with value: 18.008095794935688 and parameters: {'n_estimators': 934, 'learning_rate': 0.09870628781659774, 'max_depth': 5, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9250210121968093, 'colsample_bytree': 0.885594254990551, 'reg_alpha': 0.6020055039883946, 'reg_lambda': 0.94608975233325}. Best is trial 4 with value: 17.338208349769378.
+[TASK 4] Finished: r2_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.338208349769378
+[TASK 4] Loading dataset: r2_b1024_with_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:46:29,084] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:38,141] Trial 10 finished with value: 18.89512417708177 and parameters: {'n_estimators': 251, 'max_features': 0.9778632340015145, 'max_depth': 22, 'min_samples_split': 6, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 1 with value: 16.432016220215708.
+[I 2026-05-07 10:46:51,172] Trial 11 finished with value: 16.877918277786492 and parameters: {'n_estimators': 381, 'max_features': 0.4685872143681134, 'max_depth': 24, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 1 with value: 16.432016220215708.
+[TASK 4] Finished: r2_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 16.432016220215708
+[TASK 4] Running study: r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:46:51,316] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:51,709] Trial 10 finished with value: 25.352918031493633 and parameters: {'alpha': 0.7120204429662935, 'fit_intercept': True, 'max_iter': 710}. Best is trial 10 with value: 25.352918031493633.
+[I 2026-05-07 10:46:52,002] Trial 11 finished with value: 25.353893713867393 and parameters: {'alpha': 0.7009214141578678, 'fit_intercept': True, 'max_iter': 742}. Best is trial 10 with value: 25.352918031493633.
+[TASK 4] Finished: r2_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 25.352918031493633
+[TASK 4] Running study: r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:46:52,117] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.609e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.517e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.474e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.137e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.919e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.144e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:46:52,843] Trial 10 finished with value: 26.58053803979651 and parameters: {'alpha': 0.004418618890350057, 'fit_intercept': True, 'max_iter': 634}. Best is trial 1 with value: 22.853208782422833.
+[I 2026-05-07 10:46:53,311] Trial 11 finished with value: 25.91780339423179 and parameters: {'alpha': 0.42644072127479704, 'fit_intercept': True, 'max_iter': 217}. Best is trial 1 with value: 22.853208782422833.
+[TASK 4] Finished: r2_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 22.853208782422833
+[TASK 4] Running study: r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:46:53,502] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:54,005] Trial 10 finished with value: 23.39353630660937 and parameters: {'alpha': 0.35510412806122327, 'l1_ratio': 0.6020846157567046, 'fit_intercept': True, 'max_iter': 973}. Best is trial 7 with value: 22.76390310655879.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.672e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.874e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.495e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.348e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:46:54,911] Trial 11 finished with value: 23.108503916568413 and parameters: {'alpha': 0.025590281693834024, 'l1_ratio': 0.20680939792707542, 'fit_intercept': True, 'max_iter': 741}. Best is trial 7 with value: 22.76390310655879.
+[TASK 4] Finished: r2_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 22.76390310655879
+[TASK 4] Running study: r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:46:55,067] Using an existing study with name 'r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:46:59,175] Trial 10 finished with value: 17.099787211029604 and parameters: {'n_estimators': 492, 'learning_rate': 0.10742637796413072, 'max_depth': 6, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.7003508190415397, 'colsample_bytree': 0.7041477523257503, 'reg_alpha': 0.48855812634732254, 'reg_lambda': 0.02838966000093318}. Best is trial 3 with value: 16.49731670483906.
+[I 2026-05-07 10:47:03,288] Trial 11 finished with value: 16.371631553776904 and parameters: {'n_estimators': 533, 'learning_rate': 0.11339659190859089, 'max_depth': 6, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.7023753615249297, 'colsample_bytree': 0.7131500645319495, 'reg_alpha': 0.45889311242588154, 'reg_lambda': 0.033631298649412104}. Best is trial 11 with value: 16.371631553776904.
+[TASK 4] Finished: r2_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 16.371631553776904
+[TASK 4] Loading dataset: r2_b2048_no_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:47:03,490] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:47:08,868] Trial 10 finished with value: 18.391559422538972 and parameters: {'n_estimators': 427, 'max_features': 0.10226306233912982, 'max_depth': 50, 'min_samples_split': 2, 'min_samples_leaf': 3, 'bootstrap': False}. Best is trial 3 with value: 17.797169066885374.
+[I 2026-05-07 10:47:15,859] Trial 11 finished with value: 18.180041675539602 and parameters: {'n_estimators': 500, 'max_features': 0.12378100673826059, 'max_depth': 50, 'min_samples_split': 2, 'min_samples_leaf': 3, 'bootstrap': False}. Best is trial 3 with value: 17.797169066885374.
+[TASK 4] Finished: r2_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 17.797169066885374
+[TASK 4] Running study: r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:47:16,011] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:47:16,455] Trial 10 finished with value: 169.70483549527404 and parameters: {'alpha': 0.9947192967021473, 'fit_intercept': False, 'max_iter': 616}. Best is trial 1 with value: 25.715516397638368.
+[I 2026-05-07 10:47:16,856] Trial 11 finished with value: 25.720138059516113 and parameters: {'alpha': 0.6213218010111772, 'fit_intercept': True, 'max_iter': 771}. Best is trial 1 with value: 25.715516397638368.
+[TASK 4] Finished: r2_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 25.715516397638368
+[TASK 4] Running study: r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:47:16,989] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.674e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.508e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.311e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.848e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.250e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.004e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:47:17,676] Trial 10 finished with value: 22.7968089899264 and parameters: {'alpha': 0.031263846112461274, 'fit_intercept': True, 'max_iter': 399}. Best is trial 10 with value: 22.7968089899264.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.060e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.443e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.017e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.198e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.540e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.272e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:47:18,312] Trial 11 finished with value: 22.1089327022599 and parameters: {'alpha': 0.004569727727596062, 'fit_intercept': True, 'max_iter': 390}. Best is trial 11 with value: 22.1089327022599.
+[TASK 4] Finished: r2_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 22.1089327022599
+[TASK 4] Running study: r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:47:18,441] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:47:19,040] Trial 10 finished with value: 25.965578544664783 and parameters: {'alpha': 0.5826562758056801, 'l1_ratio': 0.02181759123356669, 'fit_intercept': True, 'max_iter': 470}. Best is trial 3 with value: 24.17718575516378.
+[I 2026-05-07 10:47:19,526] Trial 11 finished with value: 26.820194858078303 and parameters: {'alpha': 0.9872279612445862, 'l1_ratio': 0.013326530516379206, 'fit_intercept': True, 'max_iter': 148}. Best is trial 3 with value: 24.17718575516378.
+[TASK 4] Finished: r2_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 24.17718575516378
+[TASK 4] Running study: r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:47:19,642] Using an existing study with name 'r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:47:20,844] Trial 10 finished with value: 24.482548885285002 and parameters: {'n_estimators': 102, 'learning_rate': 0.015790121731253465, 'max_depth': 3, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.7004385707518828, 'colsample_bytree': 0.7102777487462335, 'reg_alpha': 0.9696971222212456, 'reg_lambda': 0.006611309675254806}. Best is trial 8 with value: 16.031283229662286.
+[I 2026-05-07 10:47:27,623] Trial 11 finished with value: 16.505172731733392 and parameters: {'n_estimators': 982, 'learning_rate': 0.07197767823313508, 'max_depth': 6, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.9947032501434983, 'colsample_bytree': 0.8032599660884291, 'reg_alpha': 0.2512354829110932, 'reg_lambda': 0.06917107919378103}. Best is trial 8 with value: 16.031283229662286.
+[TASK 4] Finished: r2_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 16.031283229662286
+[TASK 4] Loading dataset: r2_b2048_with_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:47:27,769] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:47:34,194] Trial 10 finished with value: 16.845838146973215 and parameters: {'n_estimators': 478, 'max_features': 0.10039431936311458, 'max_depth': 22, 'min_samples_split': 6, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 2 with value: 16.299961470903323.
+[I 2026-05-07 10:47:38,083] Trial 11 finished with value: 16.727209831820936 and parameters: {'n_estimators': 162, 'max_features': 0.16314583994841658, 'max_depth': 50, 'min_samples_split': 8, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 2 with value: 16.299961470903323.
+[TASK 4] Finished: r2_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 16.299961470903323
+[TASK 4] Running study: r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:47:38,242] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:47:38,625] Trial 10 finished with value: 170.12134519972932 and parameters: {'alpha': 0.6891580380645261, 'fit_intercept': False, 'max_iter': 101}. Best is trial 1 with value: 25.762663770010327.
+[I 2026-05-07 10:47:39,192] Trial 11 finished with value: 25.758875680516905 and parameters: {'alpha': 0.9725524934154414, 'fit_intercept': True, 'max_iter': 495}. Best is trial 11 with value: 25.758875680516905.
+[TASK 4] Finished: r2_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 25.758875680516905
+[TASK 4] Running study: r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:47:39,372] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.293e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.296e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.087e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.208e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.327e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.324e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:47:40,043] Trial 10 finished with value: 22.11178231627178 and parameters: {'alpha': 0.0069565593338575815, 'fit_intercept': True, 'max_iter': 327}. Best is trial 10 with value: 22.11178231627178.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.540e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.281e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.505e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.268e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.465e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.118e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:47:40,631] Trial 11 finished with value: 22.75802685242392 and parameters: {'alpha': 0.02411667742644348, 'fit_intercept': True, 'max_iter': 320}. Best is trial 10 with value: 22.11178231627178.
+[TASK 4] Finished: r2_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 22.11178231627178
+[TASK 4] Running study: r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:47:40,800] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.020e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.946e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.500e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.048e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.856e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.936e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:47:41,655] Trial 10 finished with value: 22.265373978098857 and parameters: {'alpha': 0.02531283591380805, 'l1_ratio': 0.3014479151543903, 'fit_intercept': True, 'max_iter': 626}. Best is trial 5 with value: 22.125027324795703.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.342e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.986e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.429e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.144e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.163e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.722e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:47:42,617] Trial 11 finished with value: 30.605641007310048 and parameters: {'alpha': 0.0007914095091614915, 'l1_ratio': 0.30189830742501245, 'fit_intercept': True, 'max_iter': 728}. Best is trial 5 with value: 22.125027324795703.
+[TASK 4] Finished: r2_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 22.125027324795703
+[TASK 4] Running study: r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:47:42,736] Using an existing study with name 'r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:47:54,201] Trial 10 finished with value: 16.747796242735753 and parameters: {'n_estimators': 970, 'learning_rate': 0.025729872840088437, 'max_depth': 7, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.9311014987837255, 'colsample_bytree': 0.9854361756016334, 'reg_alpha': 0.0168459362976295, 'reg_lambda': 0.5807990294016703}. Best is trial 4 with value: 15.837631277579273.
+[I 2026-05-07 10:48:02,347] Trial 11 finished with value: 16.00775602596188 and parameters: {'n_estimators': 603, 'learning_rate': 0.12076409645519348, 'max_depth': 10, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9448202655280937, 'colsample_bytree': 0.9012797923792046, 'reg_alpha': 0.029767310044581607, 'reg_lambda': 0.42795450923181716}. Best is trial 4 with value: 15.837631277579273.
+[TASK 4] Finished: r2_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 15.837631277579273
+[TASK 4] Loading dataset: r2_b4096_no_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:48:02,524] Using an existing study with name 'r2_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:48:40,459] Trial 10 finished with value: 21.157681486980103 and parameters: {'n_estimators': 340, 'max_features': 0.8755797385094981, 'max_depth': 39, 'min_samples_split': 2, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 6 with value: 17.88413972341165.
+[I 2026-05-07 10:48:46,977] Trial 11 finished with value: 16.807437343961517 and parameters: {'n_estimators': 369, 'max_features': 0.10929992983269687, 'max_depth': 50, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 11 with value: 16.807437343961517.
+[TASK 4] Finished: r2_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 16.807437343961517
+[TASK 4] Running study: r2_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:48:47,164] Using an existing study with name 'r2_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:48:47,656] Trial 10 finished with value: 166.77666162350283 and parameters: {'alpha': 0.516658476384445, 'fit_intercept': False, 'max_iter': 121}. Best is trial 6 with value: 26.29511819464002.
+[I 2026-05-07 10:48:48,039] Trial 11 finished with value: 26.294123544036193 and parameters: {'alpha': 0.9353456628928184, 'fit_intercept': True, 'max_iter': 446}. Best is trial 11 with value: 26.294123544036193.
+[TASK 4] Finished: r2_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 26.294123544036193
+[TASK 4] Running study: r2_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:48:48,194] Using an existing study with name 'r2_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:48:48,653] Trial 10 finished with value: 25.484151217252684 and parameters: {'alpha': 0.44696928440313255, 'fit_intercept': True, 'max_iter': 666}. Best is trial 9 with value: 24.214919155401077.
+[I 2026-05-07 10:48:49,094] Trial 11 finished with value: 25.382981254651884 and parameters: {'alpha': 0.4328151765441323, 'fit_intercept': True, 'max_iter': 652}. Best is trial 9 with value: 24.214919155401077.
+[TASK 4] Finished: r2_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 24.214919155401077
+[TASK 4] Running study: r2_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:48:49,235] Using an existing study with name 'r2_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.155e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.065e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.302e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.147e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.981e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.075e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:48:50,465] Trial 10 finished with value: 21.433139226603615 and parameters: {'alpha': 0.013060447251886778, 'l1_ratio': 0.5682335865814523, 'fit_intercept': True, 'max_iter': 778}. Best is trial 10 with value: 21.433139226603615.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.257e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.932e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.406e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.795e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.920e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.475e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:48:51,604] Trial 11 finished with value: 21.45867854593951 and parameters: {'alpha': 0.021894542551089136, 'l1_ratio': 0.5838185872222196, 'fit_intercept': True, 'max_iter': 759}. Best is trial 10 with value: 21.433139226603615.
+[TASK 4] Finished: r2_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 21.433139226603615
+[TASK 4] Running study: r2_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:48:51,732] Using an existing study with name 'r2_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:48:54,119] Trial 10 finished with value: 16.479141777045676 and parameters: {'n_estimators': 266, 'learning_rate': 0.2727004821338078, 'max_depth': 3, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9937982434978427, 'colsample_bytree': 0.8384773274714106, 'reg_alpha': 0.0439935240055102, 'reg_lambda': 0.5095304722394042}. Best is trial 10 with value: 16.479141777045676.
+[I 2026-05-07 10:48:56,504] Trial 11 finished with value: 16.852241079435068 and parameters: {'n_estimators': 259, 'learning_rate': 0.2606824616776583, 'max_depth': 3, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9960628041382616, 'colsample_bytree': 0.8316864937288848, 'reg_alpha': 0.008333371632723845, 'reg_lambda': 0.5021459939589317}. Best is trial 10 with value: 16.479141777045676.
+[TASK 4] Finished: r2_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 16.479141777045676
+[TASK 4] Loading dataset: r2_b4096_with_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:48:56,676] Using an existing study with name 'r2_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:49:10,149] Trial 10 finished with value: 16.76519204215658 and parameters: {'n_estimators': 273, 'max_features': 0.9850765363884584, 'max_depth': 37, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 10 with value: 16.76519204215658.
+[I 2026-05-07 10:49:24,113] Trial 11 finished with value: 16.662864798235834 and parameters: {'n_estimators': 287, 'max_features': 0.9797999647302875, 'max_depth': 35, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 11 with value: 16.662864798235834.
+[TASK 4] Finished: r2_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 16.662864798235834
+[TASK 4] Running study: r2_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:49:24,269] Using an existing study with name 'r2_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:49:24,667] Trial 10 finished with value: 26.30351428183519 and parameters: {'alpha': 0.9793859401365318, 'fit_intercept': True, 'max_iter': 759}. Best is trial 10 with value: 26.30351428183519.
+[I 2026-05-07 10:49:25,002] Trial 11 finished with value: 26.303365673960144 and parameters: {'alpha': 0.9843978918773544, 'fit_intercept': True, 'max_iter': 783}. Best is trial 11 with value: 26.303365673960144.
+[TASK 4] Finished: r2_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 26.303365673960144
+[TASK 4] Running study: r2_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:49:25,132] Using an existing study with name 'r2_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:49:25,565] Trial 10 finished with value: 26.467272428189553 and parameters: {'alpha': 0.6094528150235635, 'fit_intercept': True, 'max_iter': 994}. Best is trial 7 with value: 26.05013426941601.
+[I 2026-05-07 10:49:26,025] Trial 11 finished with value: 26.372691247622384 and parameters: {'alpha': 0.5952062782319418, 'fit_intercept': True, 'max_iter': 945}. Best is trial 7 with value: 26.05013426941601.
+[TASK 4] Finished: r2_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 26.05013426941601
+[TASK 4] Running study: r2_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:49:26,172] Using an existing study with name 'r2_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:49:26,709] Trial 10 finished with value: 23.319717031091496 and parameters: {'alpha': 0.28025706939552897, 'l1_ratio': 0.6017489818728636, 'fit_intercept': True, 'max_iter': 768}. Best is trial 0 with value: 22.830747708534197.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.196e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.309e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:49:27,447] Trial 11 finished with value: 24.976049799368393 and parameters: {'alpha': 0.29133696672785003, 'l1_ratio': 0.04827271361877486, 'fit_intercept': True, 'max_iter': 372}. Best is trial 0 with value: 22.830747708534197.
+[TASK 4] Finished: r2_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 22.830747708534197
+[TASK 4] Running study: r2_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:49:27,580] Using an existing study with name 'r2_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:49:34,555] Trial 10 finished with value: 16.201181944183467 and parameters: {'n_estimators': 339, 'learning_rate': 0.022577012977521384, 'max_depth': 10, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9862669203479878, 'colsample_bytree': 0.752027324067476, 'reg_alpha': 0.4968239185381087, 'reg_lambda': 0.6024920668178717}. Best is trial 4 with value: 15.974455060967824.
+[I 2026-05-07 10:49:42,651] Trial 11 finished with value: 16.915260904422297 and parameters: {'n_estimators': 336, 'learning_rate': 0.010971322578582942, 'max_depth': 10, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9976361488806447, 'colsample_bytree': 0.7463493937886923, 'reg_alpha': 0.4572357582295782, 'reg_lambda': 0.6365410377783797}. Best is trial 4 with value: 15.974455060967824.
+[TASK 4] Finished: r2_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 15.974455060967824
+[TASK 4] Loading dataset: r2_b8192_no_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:49:42,851] Using an existing study with name 'r2_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:50:09,101] Trial 10 finished with value: 18.729769339224788 and parameters: {'n_estimators': 358, 'max_features': 0.6935671685490988, 'max_depth': 34, 'min_samples_split': 9, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 2 with value: 17.774815398380476.
+[I 2026-05-07 10:50:18,661] Trial 12 finished with value: 16.878586992262694 and parameters: {'n_estimators': 362, 'max_features': 0.20171213943888883, 'max_depth': 24, 'min_samples_split': 8, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 12 with value: 16.878586992262694.
+[TASK 4] Finished: r2_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 16.878586992262694
+[TASK 4] Running study: r2_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:50:18,830] Using an existing study with name 'r2_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:50:19,291] Trial 10 finished with value: 26.718675238135166 and parameters: {'alpha': 0.6620811647071851, 'fit_intercept': True, 'max_iter': 506}. Best is trial 1 with value: 26.714990485835763.
+[I 2026-05-07 10:50:19,617] Trial 11 finished with value: 26.718987117701978 and parameters: {'alpha': 0.6464646918810616, 'fit_intercept': True, 'max_iter': 482}. Best is trial 1 with value: 26.714990485835763.
+[TASK 4] Finished: r2_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 26.714990485835763
+[TASK 4] Running study: r2_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:50:19,740] Using an existing study with name 'r2_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.448e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.404e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.520e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.589e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:50:20,523] Trial 10 finished with value: 21.30982775738783 and parameters: {'alpha': 0.07461845536468814, 'fit_intercept': True, 'max_iter': 391}. Best is trial 10 with value: 21.30982775738783.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.097e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.392e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.900e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.443e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.440e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.862e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:50:21,269] Trial 11 finished with value: 20.710943750393376 and parameters: {'alpha': 0.014278562060418921, 'fit_intercept': True, 'max_iter': 420}. Best is trial 11 with value: 20.710943750393376.
+[TASK 4] Finished: r2_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 20.710943750393376
+[TASK 4] Running study: r2_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:50:21,416] Using an existing study with name 'r2_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:50:21,918] Trial 10 finished with value: 24.997862900998808 and parameters: {'alpha': 0.5802736235379308, 'l1_ratio': 0.7748954117307844, 'fit_intercept': True, 'max_iter': 192}. Best is trial 9 with value: 23.589892510811048.
+[I 2026-05-07 10:50:22,471] Trial 11 finished with value: 23.62085198031516 and parameters: {'alpha': 0.4911507882446547, 'l1_ratio': 0.2623860571198134, 'fit_intercept': True, 'max_iter': 957}. Best is trial 9 with value: 23.589892510811048.
+[TASK 4] Finished: r2_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 23.589892510811048
+[TASK 4] Running study: r2_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:50:22,624] Using an existing study with name 'r2_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:50:24,786] Trial 10 finished with value: 17.39626536931297 and parameters: {'n_estimators': 108, 'learning_rate': 0.1629871048378432, 'max_depth': 5, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.9903614329209798, 'colsample_bytree': 0.9849696877317082, 'reg_alpha': 0.6088264158314414, 'reg_lambda': 0.9908477890115268}. Best is trial 0 with value: 17.268134066544008.
+[I 2026-05-07 10:50:26,842] Trial 11 finished with value: 17.396953050458116 and parameters: {'n_estimators': 106, 'learning_rate': 0.16027250503254262, 'max_depth': 5, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.9966006949359517, 'colsample_bytree': 0.9982857695516033, 'reg_alpha': 0.655160067876019, 'reg_lambda': 0.9935683511770448}. Best is trial 0 with value: 17.268134066544008.
+[TASK 4] Finished: r2_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.268134066544008
+[TASK 4] Loading dataset: r2_b8192_with_arom_diff_scaled_v1
+[TASK 4] Running study: r2_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:50:27,009] Using an existing study with name 'r2_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:50:30,640] Trial 10 finished with value: 17.210030998484417 and parameters: {'n_estimators': 192, 'max_features': 0.13172417563443353, 'max_depth': 13, 'min_samples_split': 10, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 3 with value: 15.683454070812706.
+[I 2026-05-07 10:50:38,855] Trial 11 finished with value: 15.97457661604056 and parameters: {'n_estimators': 326, 'max_features': 0.1471483580084642, 'max_depth': 23, 'min_samples_split': 6, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 3 with value: 15.683454070812706.
+[TASK 4] Finished: r2_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 15.683454070812706
+[TASK 4] Running study: r2_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:50:38,993] Using an existing study with name 'r2_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:50:39,508] Trial 10 finished with value: 26.726515915039194 and parameters: {'alpha': 0.9839821807145417, 'fit_intercept': True, 'max_iter': 480}. Best is trial 10 with value: 26.726515915039194.
+[I 2026-05-07 10:50:39,879] Trial 11 finished with value: 26.72654120933793 and parameters: {'alpha': 0.9832482640468079, 'fit_intercept': True, 'max_iter': 449}. Best is trial 10 with value: 26.726515915039194.
+[TASK 4] Finished: r2_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 26.726515915039194
+[TASK 4] Running study: r2_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:50:40,055] Using an existing study with name 'r2_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.638e+01, tolerance: 1.226e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.891e+01, tolerance: 1.376e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.799e+01, tolerance: 1.231e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.160e+01, tolerance: 1.361e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.706e+01, tolerance: 1.360e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.442e+02, tolerance: 1.638e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:50:40,629] Trial 10 finished with value: 837.6936425809178 and parameters: {'alpha': 0.002316845778279286, 'fit_intercept': False, 'max_iter': 126}. Best is trial 5 with value: 21.661104109681467.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.252e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:50:41,669] Trial 11 finished with value: 21.038748398538466 and parameters: {'alpha': 0.05030828658274754, 'fit_intercept': True, 'max_iter': 953}. Best is trial 11 with value: 21.038748398538466.
+[TASK 4] Finished: r2_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 21.038748398538466
+[TASK 4] Running study: r2_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:50:41,827] Using an existing study with name 'r2_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.544e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.855e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.534e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.589e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.145e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.892e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:50:43,290] Trial 10 finished with value: 21.691010678696898 and parameters: {'alpha': 0.0263885354332747, 'l1_ratio': 0.26163412489381777, 'fit_intercept': True, 'max_iter': 717}. Best is trial 3 with value: 21.260880068153064.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.818e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.001e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.680e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.417e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.071e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.863e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:50:43,810] Trial 11 finished with value: 23.36434130267876 and parameters: {'alpha': 0.010621854894714547, 'l1_ratio': 0.561724246732061, 'fit_intercept': True, 'max_iter': 107}. Best is trial 3 with value: 21.260880068153064.
+[TASK 4] Finished: r2_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 21.260880068153064
+[TASK 4] Running study: r2_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r2_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:50:43,989] Using an existing study with name 'r2_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:50:47,967] Trial 10 finished with value: 19.772988645344746 and parameters: {'n_estimators': 108, 'learning_rate': 0.013026565338063428, 'max_depth': 9, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9697314063958127, 'colsample_bytree': 0.9709426470247731, 'reg_alpha': 0.5526562579435947, 'reg_lambda': 0.017889905452658894}. Best is trial 0 with value: 15.077384264114887.
+[I 2026-05-07 10:50:59,010] Trial 11 finished with value: 16.605303683794496 and parameters: {'n_estimators': 997, 'learning_rate': 0.18336863009438528, 'max_depth': 10, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.9476433139254216, 'colsample_bytree': 0.7754278730396006, 'reg_alpha': 0.4013971907102547, 'reg_lambda': 0.20632838546750876}. Best is trial 0 with value: 15.077384264114887.
+[TASK 4] Finished: r2_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 15.077384264114887
+[TASK 4] Loading dataset: r3_b1024_no_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:50:59,168] Using an existing study with name 'r3_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:51:13,271] Trial 10 finished with value: 21.630899770156095 and parameters: {'n_estimators': 344, 'max_features': 0.4359557436075277, 'max_depth': 39, 'min_samples_split': 10, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 8 with value: 20.527149701454956.
+[I 2026-05-07 10:51:29,651] Trial 11 finished with value: 20.90507813394385 and parameters: {'n_estimators': 478, 'max_features': 0.40783141956810004, 'max_depth': 35, 'min_samples_split': 4, 'min_samples_leaf': 3, 'bootstrap': False}. Best is trial 8 with value: 20.527149701454956.
+[TASK 4] Finished: r3_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 20.527149701454956
+[TASK 4] Running study: r3_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:51:29,786] Using an existing study with name 'r3_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:51:30,141] Trial 10 finished with value: 27.15568967457957 and parameters: {'alpha': 0.6343683704300063, 'fit_intercept': True, 'max_iter': 903}. Best is trial 0 with value: 27.15149201040122.
+[I 2026-05-07 10:51:30,537] Trial 11 finished with value: 27.155160478570235 and parameters: {'alpha': 0.6437626153748098, 'fit_intercept': True, 'max_iter': 949}. Best is trial 0 with value: 27.15149201040122.
+[TASK 4] Finished: r3_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 27.15149201040122
+[TASK 4] Running study: r3_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:51:30,704] Using an existing study with name 'r3_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.619e+00, tolerance: 1.361e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:51:31,077] Trial 10 finished with value: 52.558918545829876 and parameters: {'alpha': 0.24673856538043956, 'fit_intercept': False, 'max_iter': 116}. Best is trial 4 with value: 28.98891060662847.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.972e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.667e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.126e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.690e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.598e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.023e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:51:31,792] Trial 11 finished with value: 28.047660867037774 and parameters: {'alpha': 0.006505342444419453, 'fit_intercept': True, 'max_iter': 645}. Best is trial 11 with value: 28.047660867037774.
+[TASK 4] Finished: r3_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 28.047660867037774
+[TASK 4] Running study: r3_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:51:31,941] Using an existing study with name 'r3_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.214e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.099e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:51:32,899] Trial 10 finished with value: 26.23235680345055 and parameters: {'alpha': 0.08070413566420087, 'l1_ratio': 0.02243082132949037, 'fit_intercept': True, 'max_iter': 931}. Best is trial 4 with value: 25.760668696993967.
+[I 2026-05-07 10:51:33,639] Trial 11 finished with value: 25.210757547101856 and parameters: {'alpha': 0.07991264676892816, 'l1_ratio': 0.07363724136895095, 'fit_intercept': True, 'max_iter': 964}. Best is trial 11 with value: 25.210757547101856.
+[TASK 4] Finished: r3_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 25.210757547101856
+[TASK 4] Running study: r3_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:51:33,777] Using an existing study with name 'r3_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:51:36,957] Trial 10 finished with value: 22.579668591067122 and parameters: {'n_estimators': 695, 'learning_rate': 0.010273420501600468, 'max_depth': 3, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.9842840893987899, 'colsample_bytree': 0.7017530289849856, 'reg_alpha': 0.03828317557901506, 'reg_lambda': 0.007965283886071872}. Best is trial 1 with value: 20.123056492768164.
+[I 2026-05-07 10:51:41,169] Trial 11 finished with value: 20.426356767005903 and parameters: {'n_estimators': 554, 'learning_rate': 0.06070348006767448, 'max_depth': 8, 'min_child_weight': 4, 'gamma': 0, 'subsample': 0.9332640955702375, 'colsample_bytree': 0.8984931849275172, 'reg_alpha': 0.9525171948274672, 'reg_lambda': 0.42559056323550903}. Best is trial 1 with value: 20.123056492768164.
+[TASK 4] Finished: r3_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 20.123056492768164
+[TASK 4] Loading dataset: r3_b1024_with_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:51:41,307] Using an existing study with name 'r3_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:51:46,144] Trial 10 finished with value: 20.139408345117186 and parameters: {'n_estimators': 359, 'max_features': 0.13360126840912445, 'max_depth': 50, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 1 with value: 19.434565909375642.
+[I 2026-05-07 10:51:51,573] Trial 11 finished with value: 18.551160246199267 and parameters: {'n_estimators': 161, 'max_features': 0.3006498727826126, 'max_depth': 37, 'min_samples_split': 4, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 11 with value: 18.551160246199267.
+[TASK 4] Finished: r3_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 18.551160246199267
+[TASK 4] Running study: r3_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:51:51,774] Using an existing study with name 'r3_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:51:52,186] Trial 10 finished with value: 177.89641955711812 and parameters: {'alpha': 0.9222675991417604, 'fit_intercept': False, 'max_iter': 992}. Best is trial 1 with value: 27.12559939274671.
+[I 2026-05-07 10:51:52,526] Trial 11 finished with value: 177.80425614000637 and parameters: {'alpha': 0.9806447144687886, 'fit_intercept': False, 'max_iter': 139}. Best is trial 1 with value: 27.12559939274671.
+[TASK 4] Finished: r3_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 27.12559939274671
+[TASK 4] Running study: r3_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:51:52,653] Using an existing study with name 'r3_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.550e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.737e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.063e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.141e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.932e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.041e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:51:53,467] Trial 10 finished with value: 27.300989230837708 and parameters: {'alpha': 0.0036886109824523436, 'fit_intercept': True, 'max_iter': 600}. Best is trial 10 with value: 27.300989230837708.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.875e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.458e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.194e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.621e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.767e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.214e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:51:54,159] Trial 11 finished with value: 27.449954133853357 and parameters: {'alpha': 0.0025655508068290183, 'fit_intercept': True, 'max_iter': 665}. Best is trial 10 with value: 27.300989230837708.
+[TASK 4] Finished: r3_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 27.300989230837708
+[TASK 4] Running study: r3_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:51:54,280] Using an existing study with name 'r3_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.051e+00, tolerance: 1.226e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.539e+00, tolerance: 1.376e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.363e+00, tolerance: 1.231e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.305e+00, tolerance: 1.361e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.583e+00, tolerance: 1.360e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.890e+02, tolerance: 1.638e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:51:55,292] Trial 10 finished with value: 242.5545330287113 and parameters: {'alpha': 0.0002131390849910847, 'l1_ratio': 0.7158904811810973, 'fit_intercept': False, 'max_iter': 954}. Best is trial 7 with value: 24.88374078569258.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.135e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.645e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.441e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.588e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.951e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.021e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:51:55,660] Trial 11 finished with value: 25.256785878299517 and parameters: {'alpha': 0.05227374276477327, 'l1_ratio': 0.31829446559230645, 'fit_intercept': True, 'max_iter': 107}. Best is trial 7 with value: 24.88374078569258.
+[TASK 4] Finished: r3_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 24.88374078569258
+[TASK 4] Running study: r3_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:51:55,774] Using an existing study with name 'r3_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:51:57,509] Trial 10 finished with value: 18.218086347905295 and parameters: {'n_estimators': 107, 'learning_rate': 0.2747876344625538, 'max_depth': 7, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.9821476392442923, 'colsample_bytree': 0.7139435706535312, 'reg_alpha': 0.9951341136820464, 'reg_lambda': 0.8881076243891297}. Best is trial 8 with value: 17.534692741686158.
+[I 2026-05-07 10:51:59,305] Trial 11 finished with value: 22.743801706756997 and parameters: {'n_estimators': 141, 'learning_rate': 0.010360543268746011, 'max_depth': 7, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.8884741604847273, 'colsample_bytree': 0.7534547793472903, 'reg_alpha': 0.0072678111160603825, 'reg_lambda': 0.8397138199721749}. Best is trial 8 with value: 17.534692741686158.
+[TASK 4] Finished: r3_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.534692741686158
+[TASK 4] Loading dataset: r3_b2048_no_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:51:59,477] Using an existing study with name 'r3_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:00,747] Trial 10 finished with value: 21.485336098480314 and parameters: {'n_estimators': 76, 'max_features': 0.10200608193983035, 'max_depth': 10, 'min_samples_split': 6, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 1 with value: 19.209645160002985.
+[I 2026-05-07 10:52:05,504] Trial 11 finished with value: 20.399038096696408 and parameters: {'n_estimators': 95, 'max_features': 0.6221167630807103, 'max_depth': 29, 'min_samples_split': 5, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 1 with value: 19.209645160002985.
+[TASK 4] Finished: r3_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 19.209645160002985
+[TASK 4] Running study: r3_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:52:05,717] Using an existing study with name 'r3_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:06,152] Trial 10 finished with value: 27.938387003101695 and parameters: {'alpha': 0.9824841374524234, 'fit_intercept': True, 'max_iter': 679}. Best is trial 10 with value: 27.938387003101695.
+[I 2026-05-07 10:52:06,561] Trial 11 finished with value: 27.938219181724076 and parameters: {'alpha': 0.987607932582505, 'fit_intercept': True, 'max_iter': 790}. Best is trial 11 with value: 27.938219181724076.
+[TASK 4] Finished: r3_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 27.938219181724076
+[TASK 4] Running study: r3_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:52:06,724] Using an existing study with name 'r3_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:07,266] Trial 10 finished with value: 29.282054330341545 and parameters: {'alpha': 0.6229614906977866, 'fit_intercept': True, 'max_iter': 101}. Best is trial 9 with value: 25.877929095846884.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.622e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.059e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.227e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.724e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.085e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.040e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:52:08,056] Trial 11 finished with value: 26.320082615680935 and parameters: {'alpha': 0.024550355178892785, 'fit_intercept': True, 'max_iter': 378}. Best is trial 9 with value: 25.877929095846884.
+[TASK 4] Finished: r3_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 25.877929095846884
+[TASK 4] Running study: r3_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:52:08,225] Using an existing study with name 'r3_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.332e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:52:09,648] Trial 10 finished with value: 25.908891316391294 and parameters: {'alpha': 0.016844560832551866, 'l1_ratio': 0.8721651764343187, 'fit_intercept': True, 'max_iter': 983}. Best is trial 5 with value: 25.35813037024085.
+[I 2026-05-07 10:52:10,180] Trial 11 finished with value: 26.19897535528138 and parameters: {'alpha': 0.3634658915790216, 'l1_ratio': 0.6507252385303404, 'fit_intercept': True, 'max_iter': 698}. Best is trial 5 with value: 25.35813037024085.
+[TASK 4] Finished: r3_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 25.35813037024085
+[TASK 4] Running study: r3_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:52:10,349] Using an existing study with name 'r3_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:20,877] Trial 10 finished with value: 18.357296041465908 and parameters: {'n_estimators': 812, 'learning_rate': 0.011379250493201959, 'max_depth': 8, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.9627125927033529, 'colsample_bytree': 0.8208076264992072, 'reg_alpha': 0.6513867209340596, 'reg_lambda': 0.6634164584636508}. Best is trial 2 with value: 17.367775436370586.
+[I 2026-05-07 10:52:23,733] Trial 11 finished with value: 19.80826495036059 and parameters: {'n_estimators': 332, 'learning_rate': 0.09981885625531256, 'max_depth': 3, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.8836833823085802, 'colsample_bytree': 0.8136474144621874, 'reg_alpha': 0.6053388682867478, 'reg_lambda': 0.2646991828933341}. Best is trial 2 with value: 17.367775436370586.
+[TASK 4] Finished: r3_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.367775436370586
+[TASK 4] Loading dataset: r3_b2048_with_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:52:23,905] Using an existing study with name 'r3_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:26,565] Trial 10 finished with value: 19.751088562396326 and parameters: {'n_estimators': 165, 'max_features': 0.1091833505596778, 'max_depth': 14, 'min_samples_split': 6, 'min_samples_leaf': 4, 'bootstrap': False}. Best is trial 9 with value: 17.54144123256459.
+[I 2026-05-07 10:52:46,904] Trial 11 finished with value: 17.50106015819178 and parameters: {'n_estimators': 374, 'max_features': 0.3644449802814718, 'max_depth': 34, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 11 with value: 17.50106015819178.
+[TASK 4] Finished: r3_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 17.50106015819178
+[TASK 4] Running study: r3_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:52:47,045] Using an existing study with name 'r3_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:47,514] Trial 10 finished with value: 27.948608713402372 and parameters: {'alpha': 0.988233482234096, 'fit_intercept': True, 'max_iter': 991}. Best is trial 10 with value: 27.948608713402372.
+[I 2026-05-07 10:52:47,827] Trial 11 finished with value: 27.948833909241376 and parameters: {'alpha': 0.9798099461309231, 'fit_intercept': True, 'max_iter': 1000}. Best is trial 10 with value: 27.948608713402372.
+[TASK 4] Finished: r3_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 27.948608713402372
+[TASK 4] Running study: r3_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:52:47,947] Using an existing study with name 'r3_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.276e+01, tolerance: 1.226e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.383e+01, tolerance: 1.376e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.340e+01, tolerance: 1.231e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.366e+01, tolerance: 1.361e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.429e+01, tolerance: 1.360e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.211e+02, tolerance: 1.638e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:52:48,431] Trial 10 finished with value: 3811.6052960267234 and parameters: {'alpha': 0.00041763316819826146, 'fit_intercept': False, 'max_iter': 118}. Best is trial 2 with value: 25.615653791898943.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.047e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.159e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.142e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.595e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.669e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.468e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:52:48,825] Trial 11 finished with value: 28.280762684535553 and parameters: {'alpha': 0.007652844829092641, 'fit_intercept': True, 'max_iter': 101}. Best is trial 2 with value: 25.615653791898943.
+[TASK 4] Finished: r3_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 25.615653791898943
+[TASK 4] Running study: r3_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:52:48,945] Using an existing study with name 'r3_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:49,434] Trial 10 finished with value: 25.79746386630336 and parameters: {'alpha': 0.23660743871456075, 'l1_ratio': 0.5958336238622792, 'fit_intercept': True, 'max_iter': 144}. Best is trial 10 with value: 25.79746386630336.
+[I 2026-05-07 10:52:49,828] Trial 11 finished with value: 25.84831040367043 and parameters: {'alpha': 0.2591438650162695, 'l1_ratio': 0.6257252624320901, 'fit_intercept': True, 'max_iter': 148}. Best is trial 10 with value: 25.79746386630336.
+[TASK 4] Finished: r3_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 25.79746386630336
+[TASK 4] Running study: r3_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:52:49,957] Using an existing study with name 'r3_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:52:57,420] Trial 10 finished with value: 16.199744043186758 and parameters: {'n_estimators': 827, 'learning_rate': 0.05238161257829253, 'max_depth': 5, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.816377197919139, 'colsample_bytree': 0.7973141689413866, 'reg_alpha': 0.0003708984045085739, 'reg_lambda': 0.6415782576233211}. Best is trial 3 with value: 16.00396570533615.
+[I 2026-05-07 10:53:05,615] Trial 11 finished with value: 16.257566281205584 and parameters: {'n_estimators': 923, 'learning_rate': 0.03872033819514008, 'max_depth': 5, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.8117860603314355, 'colsample_bytree': 0.7909905934806661, 'reg_alpha': 0.0005603055177766936, 'reg_lambda': 0.6691720265214505}. Best is trial 3 with value: 16.00396570533615.
+[TASK 4] Finished: r3_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 16.00396570533615
+[TASK 4] Loading dataset: r3_b4096_no_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:53:05,796] Using an existing study with name 'r3_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:53:17,655] Trial 10 finished with value: 19.53345084613903 and parameters: {'n_estimators': 159, 'max_features': 0.5400016639154579, 'max_depth': 41, 'min_samples_split': 10, 'min_samples_leaf': 3, 'bootstrap': False}. Best is trial 4 with value: 18.34347112747661.
+[I 2026-05-07 10:53:20,897] Trial 11 finished with value: 19.731312465137318 and parameters: {'n_estimators': 58, 'max_features': 0.405967411806646, 'max_depth': 28, 'min_samples_split': 8, 'min_samples_leaf': 4, 'bootstrap': False}. Best is trial 4 with value: 18.34347112747661.
+[TASK 4] Finished: r3_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 18.34347112747661
+[TASK 4] Running study: r3_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:53:21,093] Using an existing study with name 'r3_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:53:21,483] Trial 10 finished with value: 30.126903566462893 and parameters: {'alpha': 0.017650086704208978, 'fit_intercept': True, 'max_iter': 398}. Best is trial 5 with value: 30.08548263589198.
+[I 2026-05-07 10:53:21,917] Trial 11 finished with value: 30.08016911919923 and parameters: {'alpha': 0.9963777667801805, 'fit_intercept': True, 'max_iter': 782}. Best is trial 11 with value: 30.08016911919923.
+[TASK 4] Finished: r3_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 30.08016911919923
+[TASK 4] Running study: r3_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:53:22,055] Using an existing study with name 'r3_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:53:22,651] Trial 10 finished with value: 24.522834705730777 and parameters: {'alpha': 0.3452958536270605, 'fit_intercept': True, 'max_iter': 433}. Best is trial 4 with value: 23.424663788906678.
+[I 2026-05-07 10:53:23,170] Trial 11 finished with value: 24.27790659971559 and parameters: {'alpha': 0.30926819523682364, 'fit_intercept': True, 'max_iter': 427}. Best is trial 4 with value: 23.424663788906678.
+[TASK 4] Finished: r3_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 23.424663788906678
+[TASK 4] Running study: r3_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:53:23,290] Using an existing study with name 'r3_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.182e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.727e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.347e+00, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.019e+00, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.775e+00, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.745e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:53:25,042] Trial 10 finished with value: 26.37914683094475 and parameters: {'alpha': 0.0014503888016537056, 'l1_ratio': 0.4029227648107839, 'fit_intercept': True, 'max_iter': 933}. Best is trial 2 with value: 22.75656365297984.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.944e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.764e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.249e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.682e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.430e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.066e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:53:25,541] Trial 11 finished with value: 23.06886071724311 and parameters: {'alpha': 0.056470038018491986, 'l1_ratio': 0.5568266817782639, 'fit_intercept': True, 'max_iter': 138}. Best is trial 2 with value: 22.75656365297984.
+[TASK 4] Finished: r3_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 22.75656365297984
+[TASK 4] Running study: r3_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:53:25,666] Using an existing study with name 'r3_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:53:40,534] Trial 9 finished with value: 17.90647485305819 and parameters: {'n_estimators': 992, 'learning_rate': 0.26446036045905497, 'max_depth': 6, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.8518868509446695, 'colsample_bytree': 0.8766323226674436, 'reg_alpha': 0.042858166235735844, 'reg_lambda': 0.13285375083771253}. Best is trial 0 with value: 17.883455107494445.
+[I 2026-05-07 10:53:43,497] Trial 11 finished with value: 18.157543359331598 and parameters: {'n_estimators': 138, 'learning_rate': 0.18323868882103256, 'max_depth': 8, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.8016777155678354, 'colsample_bytree': 0.7833287541250067, 'reg_alpha': 0.40971130350701046, 'reg_lambda': 0.9927583555144825}. Best is trial 0 with value: 17.883455107494445.
+[TASK 4] Finished: r3_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.883455107494445
+[TASK 4] Loading dataset: r3_b4096_with_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:53:43,673] Using an existing study with name 'r3_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:53:50,297] Trial 9 finished with value: 17.58477359269336 and parameters: {'n_estimators': 235, 'max_features': 0.18892153542600684, 'max_depth': 25, 'min_samples_split': 2, 'min_samples_leaf': 4, 'bootstrap': False}. Best is trial 1 with value: 17.1264745044545.
+[I 2026-05-07 10:53:55,383] Trial 10 finished with value: 18.17195910372589 and parameters: {'n_estimators': 61, 'max_features': 0.8532699416791033, 'max_depth': 31, 'min_samples_split': 5, 'min_samples_leaf': 1, 'bootstrap': True}. Best is trial 1 with value: 17.1264745044545.
+[TASK 4] Finished: r3_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 17.1264745044545
+[TASK 4] Running study: r3_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:53:55,536] Using an existing study with name 'r3_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:53:56,007] Trial 8 finished with value: 30.081985390336058 and parameters: {'alpha': 0.3783036445204837, 'fit_intercept': True, 'max_iter': 136}. Best is trial 6 with value: 30.058410189095262.
+[I 2026-05-07 10:53:56,366] Trial 9 finished with value: 166.75043831745285 and parameters: {'alpha': 0.408598575037694, 'fit_intercept': False, 'max_iter': 134}. Best is trial 6 with value: 30.058410189095262.
+[TASK 4] Finished: r3_b4096_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 30.058410189095262
+[TASK 4] Running study: r3_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:53:56,479] Using an existing study with name 'r3_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.126e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.950e+00, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:53:57,420] Trial 8 finished with value: 23.414050202816917 and parameters: {'alpha': 0.14181284789437973, 'fit_intercept': True, 'max_iter': 469}. Best is trial 8 with value: 23.414050202816917.
+[I 2026-05-07 10:53:57,780] Trial 9 finished with value: 28.682063050705807 and parameters: {'alpha': 0.8791849935228048, 'fit_intercept': True, 'max_iter': 341}. Best is trial 8 with value: 23.414050202816917.
+[TASK 4] Finished: r3_b4096_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 23.414050202816917
+[TASK 4] Running study: r3_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:53:57,904] Using an existing study with name 'r3_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:53:58,455] Trial 8 finished with value: 51.26296582559547 and parameters: {'alpha': 0.32787489948265125, 'l1_ratio': 0.5340707321395529, 'fit_intercept': False, 'max_iter': 550}. Best is trial 1 with value: 23.270155529468944.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.129e+01, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.581e+01, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.631e+01, tolerance: 1.052e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.076e+01, tolerance: 1.294e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.879e+01, tolerance: 1.198e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.159e+01, tolerance: 1.486e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:53:59,072] Trial 9 finished with value: 22.992343131241775 and parameters: {'alpha': 0.03874826970273426, 'l1_ratio': 0.2702929601408033, 'fit_intercept': True, 'max_iter': 180}. Best is trial 9 with value: 22.992343131241775.
+[TASK 4] Finished: r3_b4096_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 22.992343131241775
+[TASK 4] Running study: r3_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:53:59,213] Using an existing study with name 'r3_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:54:05,909] Trial 8 finished with value: 17.35626941443829 and parameters: {'n_estimators': 556, 'learning_rate': 0.18005799896832703, 'max_depth': 4, 'min_child_weight': 4, 'gamma': 0, 'subsample': 0.9291357921338699, 'colsample_bytree': 0.7892907434321361, 'reg_alpha': 0.6707819667476028, 'reg_lambda': 0.017249036322897034}. Best is trial 1 with value: 15.904270139795718.
+[I 2026-05-07 10:54:22,717] Trial 9 finished with value: 15.142741344478967 and parameters: {'n_estimators': 803, 'learning_rate': 0.03645102611272184, 'max_depth': 8, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.8487087487521596, 'colsample_bytree': 0.806660246486246, 'reg_alpha': 0.17333101970147147, 'reg_lambda': 0.019191674707378068}. Best is trial 9 with value: 15.142741344478967.
+[TASK 4] Finished: r3_b4096_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 15.142741344478967
+[TASK 4] Loading dataset: r3_b8192_no_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:54:22,951] Using an existing study with name 'r3_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:54:38,566] Trial 8 finished with value: 20.589239083477306 and parameters: {'n_estimators': 283, 'max_features': 0.7948549270027956, 'max_depth': 35, 'min_samples_split': 2, 'min_samples_leaf': 4, 'bootstrap': True}. Best is trial 3 with value: 18.41881905120098.
+[I 2026-05-07 10:54:44,091] Trial 9 finished with value: 18.184228996925974 and parameters: {'n_estimators': 141, 'max_features': 0.28735174839139493, 'max_depth': 40, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 9 with value: 18.184228996925974.
+[TASK 4] Finished: r3_b8192_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 18.184228996925974
+[TASK 4] Running study: r3_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:54:44,224] Using an existing study with name 'r3_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:54:44,586] Trial 8 finished with value: 165.0776679800611 and parameters: {'alpha': 0.5387164304747948, 'fit_intercept': False, 'max_iter': 799}. Best is trial 5 with value: 31.13424746257629.
+[I 2026-05-07 10:54:44,924] Trial 9 finished with value: 165.11696432809126 and parameters: {'alpha': 0.42509119695715697, 'fit_intercept': False, 'max_iter': 815}. Best is trial 5 with value: 31.13424746257629.
+[TASK 4] Finished: r3_b8192_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 31.13424746257629
+[TASK 4] Running study: r3_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:54:45,069] Using an existing study with name 'r3_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:54:45,552] Trial 8 finished with value: 29.635373147919324 and parameters: {'alpha': 0.993907955452627, 'fit_intercept': True, 'max_iter': 968}. Best is trial 1 with value: 23.34315975306722.
+[I 2026-05-07 10:54:45,986] Trial 9 finished with value: 34.12327476217556 and parameters: {'alpha': 0.8557437129748138, 'fit_intercept': False, 'max_iter': 754}. Best is trial 1 with value: 23.34315975306722.
+[TASK 4] Finished: r3_b8192_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 23.34315975306722
+[TASK 4] Running study: r3_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:54:46,103] Using an existing study with name 'r3_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:54:46,612] Trial 8 finished with value: 26.600495374338486 and parameters: {'alpha': 0.955767327122358, 'l1_ratio': 0.22436358623839325, 'fit_intercept': True, 'max_iter': 487}. Best is trial 1 with value: 23.61929762229843.
+[I 2026-05-07 10:54:47,354] Trial 9 finished with value: 23.63803351026743 and parameters: {'alpha': 0.32318708790559814, 'l1_ratio': 0.6713658928455244, 'fit_intercept': True, 'max_iter': 454}. Best is trial 1 with value: 23.61929762229843.
+[TASK 4] Finished: r3_b8192_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 23.61929762229843
+[TASK 4] Running study: r3_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:54:47,476] Using an existing study with name 'r3_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:54:55,305] Trial 8 finished with value: 18.17536147991987 and parameters: {'n_estimators': 394, 'learning_rate': 0.13280869565923312, 'max_depth': 7, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.9813751874556065, 'colsample_bytree': 0.7710351910058095, 'reg_alpha': 0.3297719659591224, 'reg_lambda': 0.09527182673291663}. Best is trial 3 with value: 17.421306803635805.
+[I 2026-05-07 10:55:05,898] Trial 9 finished with value: 18.894018681242255 and parameters: {'n_estimators': 285, 'learning_rate': 0.011854916477177528, 'max_depth': 7, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.9480971362637647, 'colsample_bytree': 0.7456373026786571, 'reg_alpha': 0.6127835272491077, 'reg_lambda': 0.11463139204088306}. Best is trial 3 with value: 17.421306803635805.
+[TASK 4] Finished: r3_b8192_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.421306803635805
+[TASK 4] Loading dataset: r3_b8192_with_arom_diff_scaled_v1
+[TASK 4] Running study: r3_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:55:06,151] Using an existing study with name 'r3_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:55:43,233] Trial 8 finished with value: 18.165357070014128 and parameters: {'n_estimators': 453, 'max_features': 0.594329506216836, 'max_depth': 17, 'min_samples_split': 6, 'min_samples_leaf': 4, 'bootstrap': False}. Best is trial 7 with value: 15.939082059119546.
+[I 2026-05-07 10:55:47,670] Trial 9 finished with value: 18.076181990973062 and parameters: {'n_estimators': 138, 'max_features': 0.2931196927285622, 'max_depth': 18, 'min_samples_split': 2, 'min_samples_leaf': 3, 'bootstrap': True}. Best is trial 7 with value: 15.939082059119546.
+[TASK 4] Finished: r3_b8192_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 15.939082059119546
+[TASK 4] Running study: r3_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:55:47,802] Using an existing study with name 'r3_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:55:48,175] Trial 8 finished with value: 31.1198346267724 and parameters: {'alpha': 0.6330591363039807, 'fit_intercept': True, 'max_iter': 818}. Best is trial 3 with value: 31.11488120405093.
+[I 2026-05-07 10:55:48,505] Trial 9 finished with value: 165.00565614836268 and parameters: {'alpha': 0.969475659538292, 'fit_intercept': False, 'max_iter': 342}. Best is trial 3 with value: 31.11488120405093.
+[TASK 4] Finished: r3_b8192_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 31.11488120405093
+[TASK 4] Running study: r3_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:55:48,615] Using an existing study with name 'r3_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:55:49,102] Trial 8 finished with value: 34.23304260292737 and parameters: {'alpha': 0.8728010789339643, 'fit_intercept': False, 'max_iter': 539}. Best is trial 3 with value: 23.708642597642758.
+[I 2026-05-07 10:55:49,560] Trial 9 finished with value: 34.326152505422826 and parameters: {'alpha': 0.88644469722358, 'fit_intercept': False, 'max_iter': 344}. Best is trial 3 with value: 23.708642597642758.
+[TASK 4] Finished: r3_b8192_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 23.708642597642758
+[TASK 4] Running study: r3_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:55:49,678] Using an existing study with name 'r3_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:55:50,369] Trial 8 finished with value: 59.89829351236667 and parameters: {'alpha': 0.4381261631512617, 'l1_ratio': 0.29128334834683073, 'fit_intercept': False, 'max_iter': 228}. Best is trial 3 with value: 22.588831095410296.
+[I 2026-05-07 10:55:51,036] Trial 9 finished with value: 23.98767198738006 and parameters: {'alpha': 0.3840716231038098, 'l1_ratio': 0.6518899256476511, 'fit_intercept': True, 'max_iter': 656}. Best is trial 3 with value: 22.588831095410296.
+[TASK 4] Finished: r3_b8192_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 22.588831095410296
+[TASK 4] Running study: r3_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r3_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:55:51,163] Using an existing study with name 'r3_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:04,381] Trial 8 finished with value: 18.188816482197648 and parameters: {'n_estimators': 628, 'learning_rate': 0.13999727798891182, 'max_depth': 6, 'min_child_weight': 4, 'gamma': 0, 'subsample': 0.903810422625164, 'colsample_bytree': 0.9760562808314525, 'reg_alpha': 0.10627265075439614, 'reg_lambda': 0.434542620572912}. Best is trial 2 with value: 15.460731580924975.
+[I 2026-05-07 10:56:16,842] Trial 9 finished with value: 16.696432398061393 and parameters: {'n_estimators': 720, 'learning_rate': 0.1987496550924448, 'max_depth': 4, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.9032198462865062, 'colsample_bytree': 0.8159196407085569, 'reg_alpha': 0.2252082890305206, 'reg_lambda': 0.9473292636156909}. Best is trial 2 with value: 15.460731580924975.
+[TASK 4] Finished: r3_b8192_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 15.460731580924975
+[TASK 4] Loading dataset: r4_b1024_no_arom_diff_scaled_v1
+[TASK 4] Running study: r4_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:56:16,998] Using an existing study with name 'r4_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:21,776] Trial 8 finished with value: 21.90381911635284 and parameters: {'n_estimators': 158, 'max_features': 0.6002567997249532, 'max_depth': 49, 'min_samples_split': 8, 'min_samples_leaf': 3, 'bootstrap': True}. Best is trial 6 with value: 20.1630806843609.
+[I 2026-05-07 10:56:23,526] Trial 9 finished with value: 23.01893608758959 and parameters: {'n_estimators': 59, 'max_features': 0.3225744161875918, 'max_depth': 40, 'min_samples_split': 9, 'min_samples_leaf': 1, 'bootstrap': True}. Best is trial 6 with value: 20.1630806843609.
+[TASK 4] Finished: r4_b1024_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 20.1630806843609
+[TASK 4] Running study: r4_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:56:23,649] Using an existing study with name 'r4_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:23,987] Trial 8 finished with value: 180.57263768831544 and parameters: {'alpha': 0.5658713836047613, 'fit_intercept': False, 'max_iter': 151}. Best is trial 5 with value: 28.592515403317158.
+[I 2026-05-07 10:56:24,280] Trial 9 finished with value: 181.08590219381705 and parameters: {'alpha': 0.30617847364611195, 'fit_intercept': False, 'max_iter': 976}. Best is trial 5 with value: 28.592515403317158.
+[TASK 4] Finished: r4_b1024_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 28.592515403317158
+[TASK 4] Running study: r4_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:56:24,389] Using an existing study with name 'r4_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:24,870] Trial 8 finished with value: 31.582913620019134 and parameters: {'alpha': 0.05561504523628817, 'fit_intercept': True, 'max_iter': 818}. Best is trial 1 with value: 29.47558285471073.
+[I 2026-05-07 10:56:25,177] Trial 9 finished with value: 40.73824622446241 and parameters: {'alpha': 0.6965537904760829, 'fit_intercept': False, 'max_iter': 566}. Best is trial 1 with value: 29.47558285471073.
+[TASK 4] Finished: r4_b1024_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 29.47558285471073
+[TASK 4] Running study: r4_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:56:25,308] Using an existing study with name 'r4_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:25,678] Trial 8 finished with value: 30.016892940727523 and parameters: {'alpha': 0.9815531450557694, 'l1_ratio': 0.5966054248541427, 'fit_intercept': True, 'max_iter': 814}. Best is trial 5 with value: 27.78422395231737.
+[I 2026-05-07 10:56:26,021] Trial 9 finished with value: 66.8034288951125 and parameters: {'alpha': 0.24128087098176912, 'l1_ratio': 0.5748981950298542, 'fit_intercept': False, 'max_iter': 965}. Best is trial 5 with value: 27.78422395231737.
+[TASK 4] Finished: r4_b1024_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 27.78422395231737
+[TASK 4] Running study: r4_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:56:26,135] Using an existing study with name 'r4_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:28,092] Trial 8 finished with value: 23.052002203844058 and parameters: {'n_estimators': 295, 'learning_rate': 0.23430312960255423, 'max_depth': 4, 'min_child_weight': 2, 'gamma': 0, 'subsample': 0.7358778378567337, 'colsample_bytree': 0.7803794914637006, 'reg_alpha': 0.9982404805117839, 'reg_lambda': 0.4063127071662275}. Best is trial 0 with value: 20.248866664673304.
+[I 2026-05-07 10:56:29,916] Trial 9 finished with value: 20.660310027872093 and parameters: {'n_estimators': 174, 'learning_rate': 0.021802787748774147, 'max_depth': 6, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.92184235328816, 'colsample_bytree': 0.9028630147649098, 'reg_alpha': 0.7174182082874577, 'reg_lambda': 0.206398241564531}. Best is trial 0 with value: 20.248866664673304.
+[TASK 4] Finished: r4_b1024_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 20.248866664673304
+[TASK 4] Loading dataset: r4_b1024_with_arom_diff_scaled_v1
+[TASK 4] Running study: r4_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:56:30,067] Using an existing study with name 'r4_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:38,211] Trial 8 finished with value: 21.886194519072337 and parameters: {'n_estimators': 237, 'max_features': 0.6790594839584894, 'max_depth': 19, 'min_samples_split': 10, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 7 with value: 19.4398713407535.
+[I 2026-05-07 10:56:48,215] Trial 9 finished with value: 24.25675138395676 and parameters: {'n_estimators': 111, 'max_features': 0.9209408186260202, 'max_depth': 47, 'min_samples_split': 10, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 7 with value: 19.4398713407535.
+[TASK 4] Finished: r4_b1024_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 19.4398713407535
+[TASK 4] Running study: r4_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:56:48,338] Using an existing study with name 'r4_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:48,769] Trial 8 finished with value: 181.74314572946236 and parameters: {'alpha': 0.07562841363876839, 'fit_intercept': False, 'max_iter': 377}. Best is trial 2 with value: 28.632102500954034.
+[I 2026-05-07 10:56:49,065] Trial 9 finished with value: 28.635692292356985 and parameters: {'alpha': 0.6417246034974766, 'fit_intercept': True, 'max_iter': 517}. Best is trial 2 with value: 28.632102500954034.
+[TASK 4] Finished: r4_b1024_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 28.632102500954034
+[TASK 4] Running study: r4_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:56:49,183] Using an existing study with name 'r4_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:49,627] Trial 8 finished with value: 29.919456228549688 and parameters: {'alpha': 0.0959035642116989, 'fit_intercept': True, 'max_iter': 783}. Best is trial 8 with value: 29.919456228549688.
+[I 2026-05-07 10:56:49,933] Trial 9 finished with value: 30.567487432128434 and parameters: {'alpha': 0.4347756941965923, 'fit_intercept': True, 'max_iter': 459}. Best is trial 8 with value: 29.919456228549688.
+[TASK 4] Finished: r4_b1024_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 29.919456228549688
+[TASK 4] Running study: r4_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:56:50,074] Using an existing study with name 'r4_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:50,492] Trial 8 finished with value: 27.857922442338527 and parameters: {'alpha': 0.3353501677843544, 'l1_ratio': 0.627256962423618, 'fit_intercept': True, 'max_iter': 670}. Best is trial 7 with value: 26.916453849351022.
+[I 2026-05-07 10:56:50,883] Trial 9 finished with value: 28.138609811258185 and parameters: {'alpha': 0.7811028453609544, 'l1_ratio': 0.2741679069908119, 'fit_intercept': True, 'max_iter': 703}. Best is trial 7 with value: 26.916453849351022.
+[TASK 4] Finished: r4_b1024_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 26.916453849351022
+[TASK 4] Running study: r4_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:56:50,996] Using an existing study with name 'r4_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:56:54,418] Trial 8 finished with value: 18.061894507032815 and parameters: {'n_estimators': 423, 'learning_rate': 0.05064091727722127, 'max_depth': 5, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.8258379028373, 'colsample_bytree': 0.922497256228473, 'reg_alpha': 0.13972784083767376, 'reg_lambda': 0.947338788497041}. Best is trial 3 with value: 16.955018757959134.
+[I 2026-05-07 10:56:59,403] Trial 9 finished with value: 18.28134570124156 and parameters: {'n_estimators': 722, 'learning_rate': 0.15437606496335118, 'max_depth': 10, 'min_child_weight': 4, 'gamma': 0, 'subsample': 0.7755284083185694, 'colsample_bytree': 0.7185339326930743, 'reg_alpha': 0.7474755902211954, 'reg_lambda': 0.6042866884515281}. Best is trial 3 with value: 16.955018757959134.
+[TASK 4] Finished: r4_b1024_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 16.955018757959134
+[TASK 4] Loading dataset: r4_b2048_no_arom_diff_scaled_v1
+[TASK 4] Running study: r4_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:56:59,576] Using an existing study with name 'r4_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:57:34,054] Trial 8 finished with value: 25.88920870415027 and parameters: {'n_estimators': 235, 'max_features': 0.975034700786188, 'max_depth': 48, 'min_samples_split': 6, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 4 with value: 19.521922500528145.
+[I 2026-05-07 10:58:04,186] Trial 9 finished with value: 24.508706223885234 and parameters: {'n_estimators': 292, 'max_features': 0.886749325802837, 'max_depth': 21, 'min_samples_split': 9, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 4 with value: 19.521922500528145.
+[TASK 4] Finished: r4_b2048_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 19.521922500528145
+[TASK 4] Running study: r4_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:58:04,316] Using an existing study with name 'r4_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:58:04,652] Trial 8 finished with value: 169.90085804447526 and parameters: {'alpha': 0.5218218030693001, 'fit_intercept': False, 'max_iter': 716}. Best is trial 4 with value: 28.24779043007249.
+[I 2026-05-07 10:58:04,947] Trial 9 finished with value: 28.281891119119035 and parameters: {'alpha': 0.06206377767063758, 'fit_intercept': True, 'max_iter': 953}. Best is trial 4 with value: 28.24779043007249.
+[TASK 4] Finished: r4_b2048_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 28.24779043007249
+[TASK 4] Running study: r4_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:58:05,068] Using an existing study with name 'r4_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:58:05,534] Trial 8 finished with value: 60.49340758623451 and parameters: {'alpha': 0.20316977529758623, 'fit_intercept': False, 'max_iter': 468}. Best is trial 6 with value: 25.140967432158966.
+[I 2026-05-07 10:58:05,864] Trial 9 finished with value: 35.72042662790797 and parameters: {'alpha': 0.7393748029446182, 'fit_intercept': False, 'max_iter': 853}. Best is trial 6 with value: 25.140967432158966.
+[TASK 4] Finished: r4_b2048_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 25.140967432158966
+[TASK 4] Running study: r4_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:58:05,986] Using an existing study with name 'r4_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:58:06,352] Trial 8 finished with value: 35.26762295224454 and parameters: {'alpha': 0.9180420317081543, 'l1_ratio': 0.6434174102204705, 'fit_intercept': False, 'max_iter': 999}. Best is trial 6 with value: 24.786837400187704.
+[I 2026-05-07 10:58:06,958] Trial 9 finished with value: 24.694172957234088 and parameters: {'alpha': 0.10326199468280817, 'l1_ratio': 0.35302568063148954, 'fit_intercept': True, 'max_iter': 741}. Best is trial 9 with value: 24.694172957234088.
+[TASK 4] Finished: r4_b2048_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 24.694172957234088
+[TASK 4] Running study: r4_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:58:07,092] Using an existing study with name 'r4_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:58:10,878] Trial 8 finished with value: 20.589920245036897 and parameters: {'n_estimators': 377, 'learning_rate': 0.14493504516095906, 'max_depth': 4, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.9099148646938087, 'colsample_bytree': 0.7702449499097711, 'reg_alpha': 0.6385326651329392, 'reg_lambda': 0.11439293676992572}. Best is trial 5 with value: 18.710677340417146.
+[I 2026-05-07 10:58:13,148] Trial 9 finished with value: 20.45760048362533 and parameters: {'n_estimators': 164, 'learning_rate': 0.2647694241229256, 'max_depth': 7, 'min_child_weight': 4, 'gamma': 0, 'subsample': 0.9282151602241465, 'colsample_bytree': 0.8869667053631402, 'reg_alpha': 0.25621784699057526, 'reg_lambda': 0.050735851425379105}. Best is trial 5 with value: 18.710677340417146.
+[TASK 4] Finished: r4_b2048_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 18.710677340417146
+[TASK 4] Loading dataset: r4_b2048_with_arom_diff_scaled_v1
+[TASK 4] Running study: r4_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:58:13,317] Using an existing study with name 'r4_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:58:34,693] Trial 8 finished with value: 19.64460599439562 and parameters: {'n_estimators': 416, 'max_features': 0.5735584617737387, 'max_depth': 16, 'min_samples_split': 2, 'min_samples_leaf': 1, 'bootstrap': True}. Best is trial 3 with value: 18.361862040882613.
+[I 2026-05-07 10:58:54,960] Trial 9 finished with value: 19.67560672616954 and parameters: {'n_estimators': 316, 'max_features': 0.8195483191254054, 'max_depth': 20, 'min_samples_split': 5, 'min_samples_leaf': 1, 'bootstrap': True}. Best is trial 3 with value: 18.361862040882613.
+[TASK 4] Finished: r4_b2048_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 18.361862040882613
+[TASK 4] Running study: r4_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:58:55,089] Using an existing study with name 'r4_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:58:55,456] Trial 8 finished with value: 28.283685753629516 and parameters: {'alpha': 0.5041124726318712, 'fit_intercept': True, 'max_iter': 988}. Best is trial 2 with value: 28.273124608800185.
+[I 2026-05-07 10:58:55,747] Trial 9 finished with value: 28.276797224904506 and parameters: {'alpha': 0.7440278352626577, 'fit_intercept': True, 'max_iter': 628}. Best is trial 2 with value: 28.273124608800185.
+[TASK 4] Finished: r4_b2048_with_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 28.273124608800185
+[TASK 4] Running study: r4_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:58:55,856] Using an existing study with name 'r4_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.662e+00, tolerance: 1.226e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.962e+00, tolerance: 1.376e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.596e+00, tolerance: 1.231e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.231e+01, tolerance: 1.361e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.530e+00, tolerance: 1.360e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.446e+00, tolerance: 1.638e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:58:56,347] Trial 8 finished with value: 171.44244343815018 and parameters: {'alpha': 0.0915904499980239, 'fit_intercept': False, 'max_iter': 207}. Best is trial 4 with value: 25.861856592779198.
+[I 2026-05-07 10:58:56,768] Trial 9 finished with value: 68.37062526448945 and parameters: {'alpha': 0.18467300918206161, 'fit_intercept': False, 'max_iter': 413}. Best is trial 4 with value: 25.861856592779198.
+[TASK 4] Finished: r4_b2048_with_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 25.861856592779198
+[TASK 4] Running study: r4_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:58:56,898] Using an existing study with name 'r4_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:58:57,291] Trial 8 finished with value: 27.003958573767004 and parameters: {'alpha': 0.5346338324824826, 'l1_ratio': 0.789071775906564, 'fit_intercept': True, 'max_iter': 112}. Best is trial 4 with value: 24.80874110337691.
+[I 2026-05-07 10:58:57,624] Trial 9 finished with value: 28.233060504655583 and parameters: {'alpha': 0.9511940075997916, 'l1_ratio': 0.5044315624269655, 'fit_intercept': True, 'max_iter': 413}. Best is trial 4 with value: 24.80874110337691.
+[TASK 4] Finished: r4_b2048_with_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 24.80874110337691
+[TASK 4] Running study: r4_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:58:57,741] Using an existing study with name 'r4_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:59:05,882] Trial 8 finished with value: 17.73046475673458 and parameters: {'n_estimators': 892, 'learning_rate': 0.24006986768227057, 'max_depth': 8, 'min_child_weight': 3, 'gamma': 0, 'subsample': 0.8441686139644078, 'colsample_bytree': 0.862171269088216, 'reg_alpha': 0.8636434714976255, 'reg_lambda': 0.036031275074469495}. Best is trial 5 with value: 17.210480120601595.
+[I 2026-05-07 10:59:08,677] Trial 9 finished with value: 18.663821595050276 and parameters: {'n_estimators': 285, 'learning_rate': 0.22735927682266197, 'max_depth': 3, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.810077547542397, 'colsample_bytree': 0.8643326121514014, 'reg_alpha': 0.985906930404916, 'reg_lambda': 0.013103763483898377}. Best is trial 5 with value: 17.210480120601595.
+[TASK 4] Finished: r4_b2048_with_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.210480120601595
+[TASK 4] Loading dataset: r4_b4096_no_arom_diff_scaled_v1
+[TASK 4] Running study: r4_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 10:59:08,878] Using an existing study with name 'r4_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:59:36,179] Trial 8 finished with value: 21.34511018164593 and parameters: {'n_estimators': 440, 'max_features': 0.9996459326344966, 'max_depth': 24, 'min_samples_split': 10, 'min_samples_leaf': 4, 'bootstrap': True}. Best is trial 4 with value: 18.140500986258125.
+[I 2026-05-07 10:59:48,831] Trial 9 finished with value: 19.251389036453965 and parameters: {'n_estimators': 263, 'max_features': 0.5055429437820567, 'max_depth': 25, 'min_samples_split': 8, 'min_samples_leaf': 2, 'bootstrap': True}. Best is trial 4 with value: 18.140500986258125.
+[TASK 4] Finished: r4_b4096_no_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Best value: 18.140500986258125
+[TASK 4] Running study: r4_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[I 2026-05-07 10:59:48,968] Using an existing study with name 'r4_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:59:49,323] Trial 8 finished with value: 169.13301797552458 and parameters: {'alpha': 0.2837502746845353, 'fit_intercept': False, 'max_iter': 134}. Best is trial 3 with value: 31.269129188563113.
+[I 2026-05-07 10:59:49,643] Trial 9 finished with value: 31.2850922035056 and parameters: {'alpha': 0.3394998625564922, 'fit_intercept': True, 'max_iter': 587}. Best is trial 3 with value: 31.269129188563113.
+[TASK 4] Finished: r4_b4096_no_arom_diff_scaled_v1_ridge_change_in_arom_r_seed42
+[TASK 4] Best value: 31.269129188563113
+[TASK 4] Running study: r4_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[I 2026-05-07 10:59:49,766] Using an existing study with name 'r4_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:59:50,292] Trial 8 finished with value: 33.30377096030615 and parameters: {'alpha': 0.38660565578223666, 'fit_intercept': False, 'max_iter': 679}. Best is trial 6 with value: 22.939269926338987.
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.800e+00, tolerance: 1.121e+00
+  model = cd_fast.enet_coordinate_descent(
+/fshpc/limmiche/.local/share/mamba/envs/ml_env_2/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:716: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.198e+00, tolerance: 1.260e+00
+  model = cd_fast.enet_coordinate_descent(
+[I 2026-05-07 10:59:51,340] Trial 9 finished with value: 22.80727423132826 and parameters: {'alpha': 0.05069549400113675, 'fit_intercept': True, 'max_iter': 673}. Best is trial 9 with value: 22.80727423132826.
+[TASK 4] Finished: r4_b4096_no_arom_diff_scaled_v1_lasso_change_in_arom_r_seed42
+[TASK 4] Best value: 22.80727423132826
+[TASK 4] Running study: r4_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[I 2026-05-07 10:59:51,473] Using an existing study with name 'r4_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 10:59:52,309] Trial 8 finished with value: 98.60247071699538 and parameters: {'alpha': 0.31750537123380407, 'l1_ratio': 0.15722365294894225, 'fit_intercept': False, 'max_iter': 441}. Best is trial 2 with value: 24.23753423058633.
+[I 2026-05-07 10:59:52,855] Trial 9 finished with value: 24.68661347945665 and parameters: {'alpha': 0.35415913305183977, 'l1_ratio': 0.322743349009377, 'fit_intercept': True, 'max_iter': 979}. Best is trial 2 with value: 24.23753423058633.
+[TASK 4] Finished: r4_b4096_no_arom_diff_scaled_v1_elastic_net_change_in_arom_r_seed42
+[TASK 4] Best value: 24.23753423058633
+[TASK 4] Running study: r4_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[I 2026-05-07 10:59:52,971] Using an existing study with name 'r4_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 11:00:15,483] Trial 8 finished with value: 19.938463575710188 and parameters: {'n_estimators': 973, 'learning_rate': 0.20347659944412352, 'max_depth': 10, 'min_child_weight': 4, 'gamma': 0, 'subsample': 0.8606978312688898, 'colsample_bytree': 0.9439618462980615, 'reg_alpha': 0.07886911530441362, 'reg_lambda': 0.17822052093813454}. Best is trial 0 with value: 17.77400333240289.
+[I 2026-05-07 11:00:32,835] Trial 10 finished with value: 18.196056950071924 and parameters: {'n_estimators': 775, 'learning_rate': 0.1233770995812462, 'max_depth': 9, 'min_child_weight': 1, 'gamma': 0, 'subsample': 0.831530883878704, 'colsample_bytree': 0.7725295550896817, 'reg_alpha': 0.07538511801273902, 'reg_lambda': 0.06537097744781621}. Best is trial 0 with value: 17.77400333240289.
+[TASK 4] Finished: r4_b4096_no_arom_diff_scaled_v1_xgboost_change_in_arom_r_seed42
+[TASK 4] Best value: 17.77400333240289
+[TASK 4] Loading dataset: r4_b4096_with_arom_diff_scaled_v1
+[TASK 4] Running study: r4_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[TASK 4] Attempt 1/10 for r4_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42
+[I 2026-05-07 11:00:33,020] Using an existing study with name 'r4_b4096_with_arom_diff_scaled_v1_random_forest_change_in_arom_r_seed42' instead of creating a new one.
+[I 2026-05-07 11:01:05,157] Trial 9 finished with value: 16.96889366383194 and parameters: {'n_estimators': 444, 'max_features': 0.3675404876791687, 'max_depth': 42, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 2 with value: 16.861445160929883.

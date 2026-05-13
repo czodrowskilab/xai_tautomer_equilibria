@@ -1,0 +1,12 @@
+Using DB_DIR=/fshpc/limmiche/projects/xai_tautomer_equilibria/postgres_data
+Starting PostgreSQL...
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start...... done
+server started
+Checking port:
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN      1822714/postgres    
+tcp6       0      0 :::5432                 :::*                    LISTEN      1822714/postgres    
+Postgres running on cpu0015:5432
+slurmstepd: error: *** JOB 240882 ON cpu0015 CANCELLED AT 2026-05-06T15:28:10 ***

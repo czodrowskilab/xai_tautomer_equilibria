@@ -1,0 +1,13 @@
+=========================================
+Starting MLflow server on cpu0654
+Date: Thu May  7 04:23:05 CEST 2026
+User: limmiche
+Environment: ml_env_2
+Python: /fshpc/limmiche/.local/share/mamba/envs/ml_env_2/bin/python
+MLflow: /fshpc/limmiche/.local/share/mamba/envs/ml_env_2/bin/mlflow
+=========================================
+Testing PostgreSQL connection...
+✓ PostgreSQL connection successful
+Creating mlflow_db if it doesn't exist...
+Starting MLflow server on port 5000...
+Registry store URI not provided. Using backend store URI.

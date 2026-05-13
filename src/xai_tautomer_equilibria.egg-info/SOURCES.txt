@@ -1,5 +1,6 @@
 README.md
 pyproject.toml
+src/xai_tautomer_equilibria/__init__.py
 src/xai_tautomer_equilibria.egg-info/PKG-INFO
 src/xai_tautomer_equilibria.egg-info/SOURCES.txt
 src/xai_tautomer_equilibria.egg-info/dependency_links.txt

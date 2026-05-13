@@ -1,0 +1,19 @@
+Running on cpu0678
+Worker ID: 4
+Waiting for PostgreSQL at cpu0658:5432...
+cpu0658:5432 - accepting connections
+MLflow URI: postgresql+psycopg2://limmiche@cpu0658:5432/mlflow_db
+Optuna DB: postgresql://limmiche@cpu0658:5432/optuna_db
+SCRIPT PATH:
+-rw-r--r-- 1 limmiche physchemie 3821 May  6 22:23 /fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster_1.py
+🔥 EXECUTING FILE: /fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster_1.py
+PACKAGE PATH: /fshpc/limmiche/projects/xai_tautomer_equilibria/src/xai_tautomer_equilibria/__init__.py
+### NEW VERSION LOADED ###
+Slurm task: 4
+Using Optuna DB: postgresql://limmiche@cpu0658:5432/optuna_db
+Using MLflow: postgresql+psycopg2://limmiche@cpu0658:5432/mlflow_db
+RAW CONFIG: {'subset': 'change_in_arom_r', 'radius': 2, 'n_bits': 1024, 'target': 'ddg', 'n_features': 934, 'variant': 'no_arom_diff', 'scaling': 'standard_all_features'}
+CONFIG FILE: /fshpc/limmiche/projects/xai_tautomer_equilibria/data/processed/change_in_arom_r/r2_b1024_no_arom_diff_scaled_v1/config.json
+VARIANT VALUE: no_arom_diff
+[I 2026-05-06 22:34:08,760] Using an existing study with name 'r2_b1024_no_arom_diff_scaled_v1_random_forest_no_arom_diff_seed42' instead of creating a new one.
+[I 2026-05-06 22:34:13,206] Trial 10 finished with value: 20.324739632276142 and parameters: {'n_estimators': 164, 'max_features': 0.5601785186590051, 'max_depth': 29, 'min_samples_split': 4, 'min_samples_leaf': 3, 'bootstrap': True}. Best is trial 2 with value: 20.145617885487475.

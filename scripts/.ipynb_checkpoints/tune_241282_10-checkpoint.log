@@ -1,0 +1,13 @@
+Running on cpu0657
+Worker ID: 10
+Waiting for PostgreSQL at cpu0011:5432...
+cpu0011:5432 - accepting connections
+MLflow URI: postgresql+psycopg2://limmiche@cpu0011:5432/mlflow_db
+Optuna DB: postgresql://limmiche@cpu0011:5432/optuna_db
+Traceback (most recent call last):
+  File "/fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster.py", line 6, in <module>
+    from xai_tautomer_equilibria.ml.registry import DatasetRegistry
+  File "/fshpc/limmiche/projects/xai_tautomer_equilibria/src/xai_tautomer_equilibria/ml/registry.py", line 16
+    datasets = []
+    ^^^^^^^^
+IndentationError: expected an indented block after function definition on line 15

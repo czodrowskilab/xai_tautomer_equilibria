@@ -1,0 +1,21 @@
+Running on cpu0676
+Worker ID: 1
+Waiting for PostgreSQL at cpu0653:5432...
+cpu0653:5432 - accepting connections
+MLflow URI: postgresql+psycopg2://limmiche@cpu0653:5432/mlflow_db
+Optuna DB: postgresql://limmiche@cpu0653:5432/optuna_db
+SCRIPT PATH:
+-rw-r--r-- 1 limmiche physchemie 3556 May  6 22:05 /fshpc/limmiche/projects/xai_tautomer_equilibria/scripts/tune_cluster_1.py
+[I 2026-05-06 22:11:51,212] Using an existing study with name 'r2_b1024_v1_random_forest_unknown_seed42' instead of creating a new one.
+[I 2026-05-06 22:11:54,150] Trial 2601 finished with value: 16.966349011360084 and parameters: {'n_estimators': 59, 'max_features': 0.14795957972360005, 'max_depth': 47, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:11:55,525] Trial 2611 finished with value: 17.423670083261626 and parameters: {'n_estimators': 71, 'max_features': 0.19841883319902268, 'max_depth': 46, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:11:56,753] Trial 2622 finished with value: 17.624597963983327 and parameters: {'n_estimators': 71, 'max_features': 0.1696470516193048, 'max_depth': 38, 'min_samples_split': 3, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:11:57,737] Trial 2630 finished with value: 17.018241365889924 and parameters: {'n_estimators': 65, 'max_features': 0.13777114104579424, 'max_depth': 41, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:11:58,697] Trial 2640 finished with value: 18.13179477219301 and parameters: {'n_estimators': 58, 'max_features': 0.11570378469220041, 'max_depth': 45, 'min_samples_split': 6, 'min_samples_leaf': 1, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:11:59,768] Trial 2649 finished with value: 16.88915968277993 and parameters: {'n_estimators': 81, 'max_features': 0.11265969047358161, 'max_depth': 45, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:12:00,362] Trial 2657 finished with value: 23.05409077323427 and parameters: {'n_estimators': 57, 'max_features': 0.14725250532855894, 'max_depth': 49, 'min_samples_split': 2, 'min_samples_leaf': 4, 'bootstrap': True}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:12:01,152] Trial 2661 finished with value: 16.994791125780388 and parameters: {'n_estimators': 50, 'max_features': 0.13913062115957994, 'max_depth': 43, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:12:02,311] Trial 2671 finished with value: 17.265913098505905 and parameters: {'n_estimators': 65, 'max_features': 0.18019477895759511, 'max_depth': 46, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:12:03,561] Trial 2682 finished with value: 17.34307725980518 and parameters: {'n_estimators': 74, 'max_features': 0.16690651107437302, 'max_depth': 47, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:12:04,173] Trial 2693 finished with value: 18.015747448364692 and parameters: {'n_estimators': 50, 'max_features': 0.12112162170020226, 'max_depth': 48, 'min_samples_split': 2, 'min_samples_leaf': 3, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
+[I 2026-05-06 22:12:04,840] Trial 2702 finished with value: 17.172113277328936 and parameters: {'n_estimators': 50, 'max_features': 0.10121699311014695, 'max_depth': 44, 'min_samples_split': 2, 'min_samples_leaf': 2, 'bootstrap': False}. Best is trial 865 with value: 16.63451105220223.
