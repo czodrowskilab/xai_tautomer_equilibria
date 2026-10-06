@@ -3,7 +3,7 @@
   "radius": 2,
   "n_bits": 2048,
   "target": "ddg",
-  "n_features": 2048,
+  "n_features": 1440,
   "variant": "no_arom_diff",
   "scaling": "standard_all_features"
 }

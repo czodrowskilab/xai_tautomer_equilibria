@@ -1,3 +1,81 @@
-postgres_data/
+# =========================
+
+# Python
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# =========================
+
+# Jupyter
+
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+
+# Large generated artifacts
+
+# =========================
+
+models/
+models_old/
+data/*_old*/
+data/processed_old*/
+data/*_data*/
+mlruns*/
+scripts_old/
+
+# =========================
+
+# Logs and experiment output
+
+# =========================
+
+*.log
+logs/
+scripts/logs/
+scripts/logs_sum/
+test.slurm/
+
+# =========================
+
+# Temporary files
+
+# =========================
+
+*.tmp
+*.swp
+*.swo
+temp/
+
+# =========================
+
+# Local databases
+
+# =========================
+
 *.sqlite
 *.db
+postgres_data/
+
+# =========================
+
+# Generated results
+
+# =========================
+
+results/
+
+# =========================
+
+# Local caches
+
+# =========================
+
+*_cache/

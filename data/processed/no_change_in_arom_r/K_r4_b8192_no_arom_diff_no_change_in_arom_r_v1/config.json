@@ -3,7 +3,7 @@
   "radius": 4,
   "n_bits": 8192,
   "target": "K",
-  "n_features": 8192,
+  "n_features": 2003,
   "variant": "no_arom_diff",
   "scaling": "standard_all_features"
 }

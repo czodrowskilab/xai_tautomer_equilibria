@@ -92,8 +92,8 @@ def extract_ring_bond_types(molecule: Chem.Mol,
     Returns:
     - dict: A dictionary where keys are tuples of atom indices and values are bond types.
     """
-    #   molecule = clear_aromatic_flags(molecule)
-    moveAtomMapsToNotes(molecule)  # Ensure this is defined and does what you need
+
+    moveAtomMapsToNotes(molecule) 
     Chem.Kekulize(molecule)
     bond_types = {}
     
@@ -105,7 +105,7 @@ def extract_ring_bond_types(molecule: Chem.Mol,
                 continue
             neighbor_idx = neighbor.GetIdx()
             bond = molecule.GetBondBetweenAtoms(at_idx, neighbor_idx)
-            bond_type = bond.GetBondType()  # Gets bond type as a double (e.g., 1.0 for single, 2.0 for double)
+            bond_type = bond.GetBondType()  # Gets bond type as a double
             bond_key = tuple(sorted([at_idx, neighbor_idx]))
             bond_types[bond_key] = bond_type
 
@@ -125,8 +125,7 @@ def extract_ring_bond_types_neighbor(molecule: Chem.Mol,
     Returns:
     - dict: A dictionary where keys are tuples of atom indices and values are bond types.
     """
-    # molecule = clear_aromatic_flags(molecule)
-    moveAtomMapsToNotes(molecule)  # Ensure this is defined and does what you need
+    moveAtomMapsToNotes(molecule)  
     Chem.Kekulize(molecule)
     bond_types = {}
     
@@ -137,7 +136,7 @@ def extract_ring_bond_types_neighbor(molecule: Chem.Mol,
             if neighbor_idx not in relevant_atoms_list and neighbor.GetAtomicNum() != 1:  # Avoid hydrogen atoms
                 bond = molecule.GetBondBetweenAtoms(at_idx, neighbor_idx)
                 if bond:
-                    bond_type = bond.GetBondType()  # Gets bond type as a double (e.g., 1.0 for single, 2.0 for double)
+                    bond_type = bond.GetBondType()  # Gets bond type as a double
                     bond_key = tuple(sorted([at_idx, neighbor_idx]))
                     bond_types[bond_key] = bond_type
 

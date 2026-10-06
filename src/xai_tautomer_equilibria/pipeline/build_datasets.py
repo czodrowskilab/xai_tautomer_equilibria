@@ -37,6 +37,7 @@ PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 
 
+
 # -------------------------
 # Build feature matrix
 # -------------------------
@@ -44,9 +45,7 @@ def build_features(
     df: pd.DataFrame,
     radius: int,
     n_bits: int,
-    homa_df,
-    mci_df,
-    nics_df
+    homa_df
 ) -> Tuple[np.ndarray, pd.DataFrame]:
 
     features = []
@@ -55,13 +54,11 @@ def build_features(
     for row in df.itertuples(index=False):
 
         # -------------------------
-        # compute aromaticity per row
+        # load aromaticity per row
         # -------------------------
         arom = load_aromaticity_features(
             row.row,
-            homa_df,
-            mci_df,
-            nics_df
+            homa_df
         )
 
         if arom is None:
@@ -109,6 +106,69 @@ def save_dataset(X, y, feature_names, config, out_dir: Path):
     with open(out_dir / "config.json", "w") as f:
         json.dump(config, f, indent=2)
 
+
+
+
+def save_dataset_metadata(
+    df_valid: pd.DataFrame,
+    target: str,
+    out_dir: Path
+):
+    """
+    Save row identifiers, SMILES and target values
+    corresponding exactly to X.npy rows.
+    """
+
+    cols = [
+        c for c in [
+            "row",
+            "t1_smiles",
+            "t2_smiles",
+            target,
+        ]
+        if c in df_valid.columns
+    ]
+
+    df_valid[cols].reset_index(drop=True).to_csv(
+        out_dir / "dataset_rows.csv",
+        index=False
+    )
+
+
+def remove_constant_features(
+    X: np.ndarray,
+    feature_names: list[str],
+):
+    """
+    Remove features whose value is identical for every row.
+
+    Returns
+    -------
+    X_filtered : np.ndarray
+        Feature matrix with constant columns removed.
+    feature_names_filtered : list[str]
+        Feature names corresponding to X_filtered.
+    n_dropped : int
+        Number of removed constant features.
+    """
+    # Equivalent to pandas:
+    # df.loc[:, df.nunique() != 1]
+
+    unique_mask = np.ptp(X, axis=0) != 0
+
+    X_filtered = X[:, unique_mask]
+
+    feature_names_filtered = [
+        name
+        for name, keep in zip(feature_names, unique_mask)
+        if keep
+    ]
+
+    n_dropped = (~unique_mask).sum()
+
+    return X_filtered, feature_names_filtered, n_dropped
+
+
 def main():
 
     # -------------------------
@@ -116,8 +176,7 @@ def main():
     # -------------------------
     df = pd.read_csv(TAUTOBASE_PATH)
     homa_df = pd.read_csv(HOMA_VALUES_PATH)
-    mci_df = pd.read_csv(MCI_VALUES_PATH)
-    nics_df = pd.read_csv(NICSZZ_VALUES_PATH)
+
     # -------------------------
     # Standardize schema
     # -------------------------
@@ -167,25 +226,37 @@ def main():
 
     df = df.merge(pd.DataFrame(results), on="row")
 
+
     # -------------------------
     # Subsets
     # -------------------------
-    subsets = {
-        "change_in_arom_r": df[df["ring_change"]],
-        "change_near": df[df["neighbor_change"] & ~df["ring_change"]],
-        "no_change_near": df[~df["neighbor_change"] & ~df["ring_change"]],
-    }
+    change_in_arom_r = df[df["ring_change"]].copy()
 
-    subsets["change_in_arom_r"], subsets["change_near"] = move_rows(
-        subsets["change_in_arom_r"],
-        subsets["change_near"],
+    change_near = df[
+        df["neighbor_change"] & ~df["ring_change"]
+    ].copy()
+
+    no_change_near = df[
+        ~df["neighbor_change"] & ~df["ring_change"]
+    ].copy()
+
+
+    change_in_arom_r, change_near = move_rows(
+        change_in_arom_r,
+        change_near,
         [227, 525]
     )
 
-    subsets["no_change_in_arom_r"] = pd.concat(
-        [subsets["change_near"], subsets["no_change_near"]],
-        ignore_index=True
-    )
+    # save subsets
+    subsets = {
+        "change_in_arom_r": change_in_arom_r,
+        "no_change_in_arom_r": pd.concat(
+            [change_near, no_change_near],
+            ignore_index=True
+        ),
+    }
+
+
 
     # -------------------------
     # Config
@@ -197,6 +268,7 @@ def main():
 
     BASE_DIR = PROCESSED_DIR
     registry = []
+    dataset_registry_rows = []
 
     # -------------------------
     # Run experiments
@@ -223,9 +295,7 @@ def main():
                         subset_df,
                         radius,
                         n_bits,
-                        homa_df,
-                        mci_df,
-                        nics_df
+                        homa_df
                     )
 
                     # -------------------------
@@ -241,27 +311,25 @@ def main():
                     # -------------------------
                     # feature names
                     # -------------------------
+
                     n_total = X.shape[1]
-                    n_arom = 3
+                    n_arom = 1
                     n_fp = n_total - n_arom
 
                     feature_names = (
-                        [f"fp_bit_{i}" for i in range(n_fp)] +
-                        [
-                            "relative_homa_difference",
-                            "relative_mci_difference",
-                            "relative_nicszz_difference"
-                        ]
+                        ["relative_homa_difference"] +
+                        [f"fp_bit_{i}" for i in range(n_fp)]
                     )
 
                     # -------------------------
                     # variants
                     # -------------------------
+
                     X_base = X
 
                     variants = {
                         "no_arom_diff": (
-                            X_base[:, :n_fp],
+                            X_base[:, n_arom:],
                             [f"fp_bit_{i}" for i in range(n_fp)]
                         ),
 
@@ -272,9 +340,22 @@ def main():
                     }
 
                     # -------------------------
-                    # scaling + saving
+                    # removing constant features + scaling + saving
                     # -------------------------
+
                     for variant_name, (X_curr, feature_names_curr) in variants.items():
+
+
+                        X_curr, feature_names_curr, n_dropped = remove_constant_features(
+                            X_curr,
+                            feature_names_curr
+                        )
+
+                        print(
+                            f"{variant_name}: dropped {n_dropped} "
+                            f"constant features; "
+                            f"{X_curr.shape[1]} features remaining"
+                        )
 
                         scaler = StandardScaler()
                         X_scaled = scaler.fit_transform(X_curr)
@@ -296,6 +377,7 @@ def main():
 
                         out_dir = subset_dir / dataset_id
 
+
                         save_dataset(
                             X_scaled,
                             y,
@@ -303,6 +385,31 @@ def main():
                             config,
                             out_dir
                         )
+                        
+                        save_dataset_metadata(
+                            df_valid,
+                            target,
+                            out_dir
+                        )
+
+
+                        registry_subset = df_valid[
+                            [
+                                "row",
+                                "t1_smiles",
+                                "t2_smiles",
+                                target,
+                            ]
+                        ].copy()
+                        
+                        registry_subset["dataset_id"] = dataset_id
+                        registry_subset["subset"] = subset_name
+                        registry_subset["radius"] = radius
+                        registry_subset["n_bits"] = n_bits
+                        registry_subset["variant"] = variant_name
+                        registry_subset["target"] = target
+                        
+                        dataset_registry_rows.append(registry_subset)
 
                         registry.append({
                             "dataset_id": dataset_id,
@@ -326,8 +433,36 @@ def main():
                     with open(registry_path, "w") as f:
                         json.dump(registry, f, indent=2)
 
+
+                    # -------------------------
+                    # Save global SMILES registry
+                    # -------------------------
+                    if dataset_registry_rows:
+                
+                        registry_df = pd.concat(
+                            dataset_registry_rows,
+                            ignore_index=True
+                        )
+                
+                        registry_df.to_csv(
+                            BASE_DIR / "dataset_registry_with_smiles.csv",
+                            index=False
+                        )
+                
+                        print(
+                            f"Saved global registry: "
+                            f"{BASE_DIR / 'dataset_registry_with_smiles.csv'}"
+                        )
+                
+  
+                
+                
+
+
+
             print(f"\nSaved dataset registry at {registry_path}")
 
 
 if __name__ == "__main__":
     main()
+    

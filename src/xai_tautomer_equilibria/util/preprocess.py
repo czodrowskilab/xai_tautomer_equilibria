@@ -1,5 +1,5 @@
 """
-Data loading and preprocessing utilities.
+Data loading and preprocessing functions.
 """
 
 from pathlib import Path
@@ -69,11 +69,10 @@ def standardize_mol(molecule):
     molecule = Chem.AddHs(molecule) 
     # Sanitize the molecule
 
-    AllChem.SanitizeMol(molecule) #commented out bc it is done already below
-    # AllChem.EmbedMolecule(molecule, randomSeed=1, maxAttempts = 5000) #https://github.com/rdkit/rdkit/issues/1433 #inserted maxattempts
-    AllChem.EmbedMolecule(molecule, randomSeed=1)  #commented out bc it is done already below
-    AllChem.UFFOptimizeMolecule(molecule) #commented out bc it is done already below
-    molecule.GetConformer() #commented out bc it is done already below
+    AllChem.SanitizeMol(molecule) 
+    AllChem.EmbedMolecule(molecule, randomSeed=1) 
+    AllChem.UFFOptimizeMolecule(molecule) 
+    molecule.GetConformer() 
 
     return molecule
 
@@ -108,7 +107,7 @@ RENAME_MAP = {
 
 def standardize_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Normalize dataset column names into a consistent schema.
+    Normalize dataset column names into a consistent name schema.
     """
     df = df.copy()
 

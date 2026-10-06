@@ -2,7 +2,7 @@
 Aromaticity feature utilities.
 
 This module provides:
-- Aromaticity classification from scalar values (NICS, HOMA)
+- Aromaticity values (NICSzz, HOMA, MCI)
 - RDKit-based aromaticity checks
 """
 
@@ -76,7 +76,7 @@ def is_ring_aromatic(mol: Chem.Mol, atom_indices: List[int]) -> bool:
     Check if a set of atoms forms an aromatic ring (MMFF model).
     """
 
-    mol = Chem.Mol(mol)  # defensive copy
+    mol = Chem.Mol(mol)  # copy
     Chem.SetAromaticity(mol, Chem.AromaticityModel.AROMATICITY_MMFF94)
 
     for idx in atom_indices:

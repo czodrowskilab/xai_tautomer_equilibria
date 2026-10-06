@@ -1,5 +1,5 @@
 """
-Feature engineering utilities for molecular ML models.
+Feature functions and utilities for ML models
 """
 
 from typing import List
@@ -53,7 +53,10 @@ def morgan_fingerprint(
     radius: int = 2,
     n_bits: int = 2048
 ) -> np.ndarray:
-    """Generate Morgan fingerprint."""
+    """
+    Generate Morgan fingerprint.
+
+    """
 
     fp = AllChem.GetMorganFingerprintAsBitVect(
         mol,
@@ -77,6 +80,7 @@ def difference_fingerprint(
 
     binary=True → absolute difference (0/1)
     binary=False → signed difference (-1,0,1)
+
     """
 
     if binary:
@@ -88,7 +92,7 @@ def difference_fingerprint(
 # -------------------------
 # Aromaticity features
 # -------------------------
-def load_aromaticity_features(
+def load_aromaticity_features_all_feat(
     row_id,
     homa_df,
     mci_df,
@@ -114,8 +118,35 @@ def load_aromaticity_features(
         return None
 
     return values
+
+
+
+def load_aromaticity_features(
+    row_id,
+    homa_df
+) -> np.ndarray:
+
+    def get_value(df, colname):
+
+        match = df.loc[df["row"] == row_id]
+
+        if match.empty:
+            return np.nan
+
+        return match[colname].values[0]
+
+    homa_val = get_value(homa_df, "relative_homa_difference")
+
+
+    values = np.array([homa_val], dtype=float)
+
+    if np.isnan(values).any():
+        return None
+
+    return values
+
 # -------------------------
-# High-level feature builder
+# feature builder
 # -------------------------
 def featurize_pair(
     smiles1: str,
@@ -126,6 +157,7 @@ def featurize_pair(
 ) -> np.ndarray:
     """
     Convert SMILES pair into feature vector.
+
     """
 
     mol1 = standardize_smiles(smiles1)
@@ -141,7 +173,7 @@ def featurize_pair(
 
     # Append aromaticity descriptors  
     if aromaticity_features is not None:
-        diff = np.concatenate([diff, aromaticity_features])
+        diff = np.concatenate([aromaticity_features, diff])
 
 
     return diff
@@ -160,7 +192,8 @@ def featurize_dataframe(
     nics_csv="nicszz_values.csv",
 ):
     """
-    Apply feature generation to entire dataframe.
+    Apply feature generation to dataframe.
+
     """
 
     # Load aromaticity tables
