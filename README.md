@@ -19,20 +19,24 @@ To understand what the importance of aromaticity in model predictions, we employ
 
 ## Usage
 
-# Build datasets
+## Build datasets
 python -m xai_tautomer_equilibria.pipeline.build_datasets
 
-# Tune and train
+## Tune and train
 python scripts/tune_cluster_linux.py
 python scripts/run_train_linux.py
 
-# Explainability for one seed
+## Explainability for one seed
 python all_ml_models_intrinsic.py 
 python all_ml_models_shap.py      
 
-# Aggregate Importances
+## Aggregate Importances
 python bar_plot_generator.py --kind intrinsic
 python bar_plot_generator.py --kind shap      
+
+## Models
+10.5281/zenodo.23197612
+
 
 
 ## Installation
