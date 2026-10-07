@@ -10,8 +10,8 @@ This project explores the relationship between tautomer equilibria and aromatici
 
 To understand what the importance of aromaticity in model predictions, we employ two different explainability approaches:
 
-- **Intrinsic feature importances** — the model's own learned attributions.
-- **Extrinsic feature importances** — SHAP values, which attribute predictions to features in a model-agnostic way.
+- **Intrinsic feature importances:**  the model's own learned attributions.
+- **Extrinsic feature importances:**  SHAP values, which attribute predictions to features in a model-agnostic way.
 
 
 
