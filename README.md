@@ -35,12 +35,16 @@ python bar_plot_generator.py --kind intrinsic
 python bar_plot_generator.py --kind shap      
 
 ## Models
+The trained models are archived on Zenodo:
 10.5281/zenodo.23197612
-
+The zip file contains the model registry, model metadata and all pickled models across the five model.
 
 
 ## Installation
 
+
 ```bash
+conda env create -f xai_environment.yml
+conda activate xai_tautomer
 
 .........
