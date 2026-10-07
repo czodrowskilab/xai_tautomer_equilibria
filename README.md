@@ -38,7 +38,7 @@ python all_ml_models_shap.py
 python bar_plot_generator.py --kind intrinsic
 python bar_plot_generator.py --kind shap      
 ```
-## Models
+## Trained models
 The trained models are archived on Zenodo:
 
 10.5281/zenodo.23197612
