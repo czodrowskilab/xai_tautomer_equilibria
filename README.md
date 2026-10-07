@@ -52,7 +52,7 @@ conda env create -f xai_environment.yml
 conda activate xai_tautomer
 ```
 ## Citation
-
+```bibtex
 @software{xai_tautomer_equilibria,
   title  = {Understanding the role of aromaticity in tautomeric equilibria},
   author = {Lim, Michel; Palomino-Hernández, Oscar; Czodrowski, Paul},
@@ -66,7 +66,7 @@ conda activate xai_tautomer
   year   = {2026},
   doi    = {10.5281/zenodo.23197612}
 }
-
+```
 ## Licence
 
 [MIT License](https://github.com/czodrowskilab/xai_tautomer_equilibria/main/LICENSE)
